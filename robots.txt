@@ -1,3 +1,4 @@
 Sitemap: https://youngsampk.github.io/labor_stat/sitemap.xml
+#DaumWebMasterTool:c9d31e89ee7ab95b0e0bd85c5c5c39dbf77985c16573843017c86e2f96a2c920:sdc0m+wHn0R58XxAoSfALA==
 User-agent: *
 Allow:/
