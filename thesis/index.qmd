@@ -22,6 +22,9 @@ date: "2025-12-03"
 #   publisher: "고려대학교"
 format:
   html:
+    toc: true
+    toc-depth: 2
+    toc-location: body
     other-links:
       - text: "PDF 다운로드"
         icon: file-earmark-pdf
