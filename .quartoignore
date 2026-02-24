@@ -1,0 +1,8 @@
+thesis/_book
+thesis/presentation
+thesis/*.tex
+thesis/park.Rproj
+thesis/.quarto
+thesis/.vscode
+thesis/.gitignore
+thesis/.Rhistory

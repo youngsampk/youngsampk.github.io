@@ -1,0 +1,20 @@
+# thesis 폴더 공통 메타데이터
+# 블로그 _quarto.yml의 설정을 상속하면서 논문 전용 설정을 추가
+
+bibliography: references.bib
+csl: apa_korean_variant.csl
+link-citations: true
+nocite: |
+  @*
+
+crossref:
+  fig-title: "그림"
+  tbl-title: "표"
+  fig-prefix: "그림"
+  tbl-prefix: "표"
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true

@@ -1,0 +1,1896 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:style xmlns:ns0="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="expanded" default-locale="ko-KR">
+  <ns0:info>
+    <ns0:title>American Psychological Association 7th edition</ns0:title>
+    <ns0:title-short>APA</ns0:title-short>
+    <ns0:id>http://www.zotero.org/styles/apa</ns0:id>
+    <ns0:link href="http://www.zotero.org/styles/apa" rel="self" />
+    <ns0:link href="http://www.zotero.org/styles/apa-6th-edition" rel="template" />
+    <ns0:link href="https://apastyle.apa.org/style-grammar-guidelines/references/examples" rel="documentation" />
+    <ns0:author>
+      <ns0:name and="text">Brenton M. Wiernik</ns0:name>
+      <ns0:email>zotero@wiernik.org</ns0:email>
+    </ns0:author>
+    <ns0:category citation-format="author-date" />
+    <ns0:category field="psychology" />
+    <ns0:category field="generic-base" />
+    <ns0:updated>2022-10-02T20:08:41+00:00</ns0:updated>
+    <ns0:rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</ns0:rights>
+  </ns0:info>
+  <ns0:locale xml:lang="en">
+    <ns0:terms>
+      <ns0:term name="editortranslator" form="short">
+        <ns0:single>ed. &amp; trans.</ns0:single>
+        <ns0:multiple>eds. &amp; trans.</ns0:multiple>
+      </ns0:term>
+      <ns0:term name="translator" form="short">trans.</ns0:term>
+      <ns0:term name="interviewer" form="short">
+        <ns0:single>interviewer</ns0:single>
+        <ns0:multiple>interviewers</ns0:multiple>
+      </ns0:term>
+      <ns0:term name="collection-editor" form="short">
+        <ns0:single>ed.</ns0:single>
+        <ns0:multiple>eds.</ns0:multiple>
+      </ns0:term>
+      <ns0:term name="circa" form="short">ca.</ns0:term>
+      <ns0:term name="bc"> B.C.E.</ns0:term>
+      <ns0:term name="ad"> C.E.</ns0:term>
+      <ns0:term name="letter">personal communication</ns0:term>
+      <ns0:term name="letter" form="short">letter</ns0:term>
+      <ns0:term name="issue" form="long">
+        <ns0:single>issue</ns0:single>
+        <ns0:multiple>issues</ns0:multiple>
+      </ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="af">
+    <ns0:terms>
+      <ns0:term name="letter">persoonlike kommunikasie</ns0:term>
+      <ns0:term name="letter" form="short">brief</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="ar">
+    <ns0:terms>
+      <ns0:term name="letter">اتصال شخصي</ns0:term>
+      <ns0:term name="letter" form="short">خطاب</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="bg">
+    <ns0:terms>
+      <ns0:term name="letter">лична комуникация</ns0:term>
+      <ns0:term name="letter" form="short">писмо</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="ca">
+    <ns0:terms>
+      <ns0:term name="letter">comunicació personal</ns0:term>
+      <ns0:term name="letter" form="short">carta</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="cs">
+    <ns0:terms>
+      <ns0:term name="letter">osobní komunikace</ns0:term>
+      <ns0:term name="letter" form="short">dopis</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="cy">
+    <ns0:terms>
+      <ns0:term name="letter">cyfathrebu personol</ns0:term>
+      <ns0:term name="letter" form="short">llythyr</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="da">
+    <ns0:terms>
+      <ns0:term name="et-al">et al.</ns0:term>
+      <ns0:term name="letter">personlig kommunikation</ns0:term>
+      <ns0:term name="letter" form="short">brev</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="de">
+    <ns0:terms>
+      <ns0:term name="et-al">et al.</ns0:term>
+      <ns0:term name="letter">persönliche Kommunikation</ns0:term>
+      <ns0:term name="letter" form="short">Brief</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="el">
+    <ns0:terms>
+      <ns0:term name="letter">προσωπική επικοινωνία</ns0:term>
+      <ns0:term name="letter" form="short">επιστολή</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="es">
+    <ns0:terms>
+      <ns0:term name="from">de</ns0:term>
+      <ns0:term name="letter">comunicación personal</ns0:term>
+      <ns0:term name="letter" form="short">carta</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="et">
+    <ns0:terms>
+      <ns0:term name="letter">isiklik suhtlus</ns0:term>
+      <ns0:term name="letter" form="short">kiri</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="eu">
+    <ns0:terms>
+      <ns0:term name="letter">komunikazio pertsonala</ns0:term>
+      <ns0:term name="letter" form="short">gutuna</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="fa">
+    <ns0:terms>
+      <ns0:term name="letter">ارتباط شخصی</ns0:term>
+      <ns0:term name="letter" form="short">نامه</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="fi">
+    <ns0:terms>
+      <ns0:term name="letter">henkilökohtainen viestintä</ns0:term>
+      <ns0:term name="letter" form="short">kirje</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="fr">
+    <ns0:terms>
+      <ns0:term name="letter">communication personnelle</ns0:term>
+      <ns0:term name="letter" form="short">lettre</ns0:term>
+      <ns0:term name="editor" form="short">
+        <ns0:single>éd.</ns0:single>
+        <ns0:multiple>éds.</ns0:multiple>
+      </ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="he">
+    <ns0:terms>
+      <ns0:term name="letter">תקשורת אישית</ns0:term>
+      <ns0:term name="letter" form="short">מכתב</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="hr">
+    <ns0:terms>
+      <ns0:term name="letter">osobna komunikacija</ns0:term>
+      <ns0:term name="letter" form="short">pismo</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="hu">
+    <ns0:terms>
+      <ns0:term name="letter">személyes kommunikáció</ns0:term>
+      <ns0:term name="letter" form="short">levél</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="id">
+    <ns0:terms>
+      <ns0:term name="letter">komunikasi pribadi</ns0:term>
+      <ns0:term name="letter" form="short">surat</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="is">
+    <ns0:terms>
+      <ns0:term name="letter">persónuleg samskipti</ns0:term>
+      <ns0:term name="letter" form="short">bréf</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="it">
+    <ns0:terms>
+      <ns0:term name="letter">comunicazione personale</ns0:term>
+      <ns0:term name="letter" form="short">lettera</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="ja">
+    <ns0:terms>
+      <ns0:term name="letter">個人的なやり取り</ns0:term>
+      <ns0:term name="letter" form="short">手紙</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="ko">
+    <ns0:terms>
+      <ns0:term name="letter">개인 서신</ns0:term>
+      <ns0:term name="letter" form="short">편지</ns0:term>
+      <ns0:term name="and">·</ns0:term>
+      <ns0:term name="et-al">외</ns0:term>
+      <ns0:term name="page" form="short">p.</ns0:term>
+      <ns0:term name="chapter">장</ns0:term>
+      <ns0:term name="chapter" form="short">장</ns0:term>
+      <ns0:term name="edition">판</ns0:term>
+      <ns0:term name="edition" form="short">판</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="la">
+    <ns0:terms>
+      <ns0:term name="letter" />
+      <ns0:term name="letter" form="short">epistula</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="lt">
+    <ns0:terms>
+      <ns0:term name="letter">communicationis personalis</ns0:term>
+      <ns0:term name="letter" form="short" />
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="lv">
+    <ns0:terms>
+      <ns0:term name="letter">personīga komunikācija</ns0:term>
+      <ns0:term name="letter" form="short">vēstule</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="mn">
+    <ns0:terms>
+      <ns0:term name="letter">хувийн харилцаа холбоо</ns0:term>
+      <ns0:term name="letter" form="short">захиа</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="nb">
+    <ns0:terms>
+      <ns0:term name="et-al">et al.</ns0:term>
+      <ns0:term name="letter">personlig kommunikasjon</ns0:term>
+      <ns0:term name="letter" form="short">brev</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="nl">
+    <ns0:terms>
+      <ns0:term name="et-al">et al.</ns0:term>
+      <ns0:term name="letter">persoonlijke communicatie</ns0:term>
+      <ns0:term name="letter" form="short">brief</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="nn">
+    <ns0:terms>
+      <ns0:term name="et-al">et al.</ns0:term>
+      <ns0:term name="letter">personlig kommunikasjon</ns0:term>
+      <ns0:term name="letter" form="short">brev</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="pl">
+    <ns0:terms>
+      <ns0:term name="letter">osobista komunikacja</ns0:term>
+      <ns0:term name="letter" form="short">list</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="pt">
+    <ns0:terms>
+      <ns0:term name="letter">comunicação pessoal</ns0:term>
+      <ns0:term name="letter" form="short">carta</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="ro">
+    <ns0:terms>
+      <ns0:term name="letter">comunicare personală</ns0:term>
+      <ns0:term name="letter" form="short">scrisoare</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="ru">
+    <ns0:terms>
+      <ns0:term name="letter">личная переписка</ns0:term>
+      <ns0:term name="letter" form="short">письмо</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="sk">
+    <ns0:terms>
+      <ns0:term name="letter">osobná komunikácia</ns0:term>
+      <ns0:term name="letter" form="short">list</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="sl">
+    <ns0:terms>
+      <ns0:term name="letter">osebna komunikacija</ns0:term>
+      <ns0:term name="letter" form="short">pismo</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="sr">
+    <ns0:terms>
+      <ns0:term name="letter">лична комуникација</ns0:term>
+      <ns0:term name="letter" form="short">писмо</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="sv">
+    <ns0:terms>
+      <ns0:term name="letter">personlig kommunikation</ns0:term>
+      <ns0:term name="letter" form="short">brev</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="th">
+    <ns0:terms>
+      <ns0:term name="letter">การสื่อสารส่วนบุคคล</ns0:term>
+      <ns0:term name="letter" form="short">จดหมาย</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="tr">
+    <ns0:terms>
+      <ns0:term name="letter">kişisel iletişim</ns0:term>
+      <ns0:term name="letter" form="short">mektup</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="uk">
+    <ns0:terms>
+      <ns0:term name="letter">особисте спілкування</ns0:term>
+      <ns0:term name="letter" form="short">лист</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="vi">
+    <ns0:terms>
+      <ns0:term name="letter">giao tiếp cá nhân</ns0:term>
+      <ns0:term name="letter" form="short">thư</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="zh-CN">
+    <ns0:terms>
+      <ns0:term name="letter">的私人交流</ns0:term>
+      <ns0:term name="letter" form="short">信函</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  <ns0:locale xml:lang="zh-TW">
+    <ns0:terms>
+      <ns0:term name="letter">私人通訊</ns0:term>
+      <ns0:term name="letter" form="short">信函</ns0:term>
+    </ns0:terms>
+  </ns0:locale>
+  
+  
+  <ns0:macro name="author-bib">
+    <ns0:names variable="composer" delimiter=", ">
+      <ns0:name name-as-sort-order="all" and="text" sort-separator=", " initialize-with=". " delimiter=" " delimiter-precedes-last="never" />
+      <ns0:substitute>
+        <ns0:names variable="author" />
+        <ns0:names variable="illustrator" />
+        <ns0:names variable="director">
+          <ns0:name name-as-sort-order="all" and="text" sort-separator=", " initialize-with=". " delimiter=" " delimiter-precedes-last="never" />
+          <ns0:label form="long" prefix=" (" suffix=")" text-case="title" />
+        </ns0:names>
+        <ns0:choose>
+          <ns0:if variable="container-title">
+            <ns0:choose>
+              <ns0:if type="book entry entry-dictionary entry-encyclopedia" match="any">
+                <ns0:choose>
+                  <ns0:if variable="title">
+                    <ns0:group delimiter=" ">
+                      <ns0:text macro="title" />
+                      <ns0:text macro="parenthetical" />
+                    </ns0:group>
+                  </ns0:if>
+                  <ns0:else>
+                    <ns0:text macro="title-and-descriptions" />
+                  </ns0:else>
+                </ns0:choose>
+              </ns0:if>
+            </ns0:choose>
+          </ns0:if>
+        </ns0:choose>
+        
+        <ns0:names variable="editor" delimiter=", ">
+          <ns0:name name-as-sort-order="all" and="text" sort-separator=", " initialize-with=". " delimiter=" " delimiter-precedes-last="never" />
+          <ns0:label form="short" prefix=" (" suffix=")" text-case="title" />
+        </ns0:names>
+        <ns0:names variable="editorial-director">
+          <ns0:name name-as-sort-order="all" and="text" sort-separator=", " initialize-with=". " delimiter=" " delimiter-precedes-last="never" />
+          <ns0:label form="short" prefix=" (" suffix=")" text-case="title" />
+        </ns0:names>
+        <ns0:names variable="collection-editor">
+          <ns0:name name-as-sort-order="all" and="text" sort-separator=", " initialize-with=". " delimiter=" " delimiter-precedes-last="never" />
+          <ns0:label form="short" prefix=" (" suffix=")" text-case="title" />
+        </ns0:names>
+        <ns0:choose>
+          <ns0:if variable="title">
+            <ns0:group delimiter=" ">
+              <ns0:text macro="title" />
+              <ns0:text macro="parenthetical" />
+            </ns0:group>
+          </ns0:if>
+          <ns0:else>
+            <ns0:text macro="title-and-descriptions" />
+          </ns0:else>
+        </ns0:choose>
+      </ns0:substitute>
+    </ns0:names>
+  </ns0:macro>
+  <ns0:macro name="author-intext">
+    <ns0:choose>
+      <ns0:if type="bill legal_case legislation treaty" match="any">
+        <ns0:text macro="title-intext" />
+      </ns0:if>
+      <ns0:else-if type="interview personal_communication" match="any">
+        <ns0:choose>
+          
+          <ns0:if variable="archive container-title DOI publisher URL" match="none">
+            <ns0:group delimiter=", ">
+              <ns0:names variable="author">
+                <ns0:name and="text" delimiter="·" initialize-with=". " />
+                <ns0:substitute>
+                  <ns0:text macro="title-intext" />
+                </ns0:substitute>
+              </ns0:names>
+              
+              <ns0:text term="letter" />
+            </ns0:group>
+          </ns0:if>
+          <ns0:else>
+            <ns0:names variable="author" delimiter=", ">
+              <ns0:name form="short" and="text" delimiter="·" initialize-with=". " />
+              <ns0:substitute>
+                <ns0:text macro="title-intext" />
+              </ns0:substitute>
+            </ns0:names>
+          </ns0:else>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:names variable="composer" delimiter=", ">
+          <ns0:name form="short" and="text" delimiter="·" initialize-with=". " />
+          <ns0:substitute>
+            <ns0:names variable="author" />
+            <ns0:names variable="illustrator" />
+            <ns0:names variable="director" />
+            <ns0:choose>
+              <ns0:if variable="container-title">
+                <ns0:choose>
+                  <ns0:if type="book entry entry-dictionary entry-encyclopedia" match="any">
+                    <ns0:text macro="title-intext" />
+                  </ns0:if>
+                </ns0:choose>
+              </ns0:if>
+            </ns0:choose>
+            <ns0:names variable="editor" />
+            <ns0:names variable="editorial-director" />
+            <ns0:text macro="title-intext" />
+          </ns0:substitute>
+        </ns0:names>
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="date-bib">
+    <ns0:group delimiter=" " prefix="(" suffix=")">
+      <ns0:choose>
+        <ns0:if is-uncertain-date="issued">
+          <ns0:text term="circa" form="short" />
+        </ns0:if>
+      </ns0:choose>
+      <ns0:group>
+        <ns0:choose>
+          <ns0:if variable="issued">
+            <ns0:date variable="issued">
+              <ns0:date-part name="year" />
+            </ns0:date>
+            <ns0:text variable="year-suffix" />
+            <ns0:choose>
+              <ns0:if type="article-magazine article-newspaper broadcast interview motion_picture pamphlet personal_communication post post-weblog song speech webpage" match="any">
+                
+                <ns0:date variable="issued">
+                  <ns0:date-part prefix=", " name="month" />
+                  <ns0:date-part prefix=" " name="day" />
+                </ns0:date>
+              </ns0:if>
+              <ns0:else-if type="paper-conference">
+                
+                <ns0:choose>
+                  <ns0:if variable="collection-editor editor editorial-director issue page volume" match="none">
+                    <ns0:date variable="issued">
+                      <ns0:date-part prefix=", " name="month" />
+                      <ns0:date-part prefix=" " name="day" />
+                    </ns0:date>
+                  </ns0:if>
+                </ns0:choose>
+              </ns0:else-if>
+              
+            </ns0:choose>
+          </ns0:if>
+          <ns0:else-if variable="status">
+            <ns0:group>
+              <ns0:text variable="status" text-case="lowercase" />
+              <ns0:text variable="year-suffix" prefix="-" />
+            </ns0:group>
+          </ns0:else-if>
+          <ns0:else>
+            <ns0:text term="no date" form="short" />
+            <ns0:text variable="year-suffix" prefix="-" />
+          </ns0:else>
+        </ns0:choose>
+      </ns0:group>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="date-sort-group">
+    
+    <ns0:choose>
+      <ns0:if variable="issued">
+        <ns0:text value="1" />
+      </ns0:if>
+      <ns0:else-if variable="status">
+        <ns0:text value="2" />
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:text value="0" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="date-sort-date">
+    <ns0:date variable="issued" form="numeric" />
+  </ns0:macro>
+  <ns0:macro name="date-intext">
+    <ns0:choose>
+      <ns0:if variable="issued">
+        <ns0:group delimiter="/">
+          <ns0:group delimiter=" ">
+            <ns0:choose>
+              <ns0:if is-uncertain-date="original-date">
+                <ns0:text term="circa" form="short" />
+              </ns0:if>
+            </ns0:choose>
+            <ns0:date variable="original-date">
+              <ns0:date-part name="year" />
+            </ns0:date>
+          </ns0:group>
+          <ns0:group delimiter=" ">
+            <ns0:choose>
+              <ns0:if is-uncertain-date="issued">
+                <ns0:text term="circa" form="short" />
+              </ns0:if>
+            </ns0:choose>
+            <ns0:group>
+              <ns0:choose>
+                <ns0:if type="interview personal_communication" match="any">
+                  <ns0:choose>
+                    <ns0:if variable="archive container-title DOI publisher URL" match="none">
+                      
+                      <ns0:date variable="issued" form="text" />
+                    </ns0:if>
+                    <ns0:else>
+                      <ns0:date variable="issued">
+                        <ns0:date-part name="year" />
+                      </ns0:date>
+                    </ns0:else>
+                  </ns0:choose>
+                </ns0:if>
+                <ns0:else>
+                  <ns0:date variable="issued">
+                    <ns0:date-part name="year" />
+                  </ns0:date>
+                </ns0:else>
+              </ns0:choose>
+              <ns0:text variable="year-suffix" />
+            </ns0:group>
+          </ns0:group>
+        </ns0:group>
+      </ns0:if>
+      <ns0:else-if variable="status">
+        <ns0:text variable="status" text-case="lowercase" />
+        <ns0:text variable="year-suffix" prefix="-" />
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:text term="no date" form="short" />
+        <ns0:text variable="year-suffix" prefix="-" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  
+  <ns0:macro name="title-and-descriptions">
+    <ns0:choose>
+      <ns0:if variable="title">
+        <ns0:group delimiter=" ">
+          <ns0:text macro="title" />
+          <ns0:text macro="parenthetical" />
+          <ns0:text macro="bracketed" />
+        </ns0:group>
+      </ns0:if>
+      <ns0:else>
+        <ns0:group delimiter=" ">
+          <ns0:text macro="bracketed" />
+          <ns0:text macro="parenthetical" />
+        </ns0:group>
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="title">
+    <ns0:choose>
+      <ns0:if type="post webpage" match="any">
+        
+        <ns0:text variable="title" font-style="italic" />
+      </ns0:if>
+      <ns0:else-if variable="container-title" match="any">
+        
+        <ns0:text variable="title" />
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:choose>
+          <ns0:if type="article-journal article-magazine article-newspaper post-weblog review review-book" match="any">
+            <ns0:text variable="title" font-style="italic" />
+          </ns0:if>
+          <ns0:else-if type="paper-conference">
+            <ns0:choose>
+              <ns0:if variable="collection-editor editor editorial-director" match="any">
+                <ns0:group delimiter=": " font-style="italic">
+                  <ns0:text variable="title" />
+                  
+                  <ns0:choose>
+                    <ns0:if is-numeric="volume" match="none">
+                      <ns0:group delimiter=" ">
+                        <ns0:label variable="volume" form="short" text-case="capitalize-first" />
+                        <ns0:text variable="volume" />
+                      </ns0:group>
+                    </ns0:if>
+                  </ns0:choose>
+                </ns0:group>
+              </ns0:if>
+              <ns0:else>
+                <ns0:text variable="title" font-style="italic" />
+              </ns0:else>
+            </ns0:choose>
+          </ns0:else-if>
+          <ns0:else>
+            <ns0:group delimiter=": " font-style="italic">
+              <ns0:text variable="title" />
+              
+              <ns0:choose>
+                <ns0:if is-numeric="volume" match="none">
+                  <ns0:group delimiter=" ">
+                    <ns0:label variable="volume" form="short" text-case="capitalize-first" />
+                    <ns0:text variable="volume" />
+                  </ns0:group>
+                </ns0:if>
+              </ns0:choose>
+            </ns0:group>
+          </ns0:else>
+        </ns0:choose>
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="title-intext">
+    <ns0:choose>
+      <ns0:if variable="title" match="none">
+        <ns0:text macro="bracketed-intext" prefix="[" suffix="]" />
+      </ns0:if>
+      <ns0:else-if type="bill">
+        
+        <ns0:choose>
+          <ns0:if variable="number container-title" match="none">
+            <ns0:text variable="title" form="short" font-style="italic" text-case="title" />
+          </ns0:if>
+          <ns0:else-if variable="title">
+            <ns0:text variable="title" form="short" text-case="title" />
+          </ns0:else-if>
+          <ns0:else>
+            <ns0:group delimiter=" ">
+              <ns0:text variable="genre" />
+              <ns0:group delimiter=" ">
+                <ns0:choose>
+                  <ns0:if variable="chapter-number container-title" match="none">
+                    
+                    <ns0:text term="issue" form="short" />
+                  </ns0:if>
+                </ns0:choose>
+                <ns0:text variable="number" />
+              </ns0:group>
+            </ns0:group>
+          </ns0:else>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else-if type="legal_case" match="any">
+        
+        <ns0:text variable="title" font-style="italic" />
+      </ns0:else-if>
+      <ns0:else-if type="legislation treaty" match="any">
+        
+        <ns0:text variable="title" form="short" text-case="title" />
+      </ns0:else-if>
+      <ns0:else-if type="post webpage" match="any">
+        
+        <ns0:text variable="title" form="short" font-style="italic" text-case="title" />
+      </ns0:else-if>
+      <ns0:else-if variable="container-title" match="any">
+        
+        <ns0:text variable="title" form="short" quotes="true" text-case="title" />
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:text variable="title" form="short" font-style="italic" text-case="title" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="parenthetical">
+    
+    <ns0:group prefix="(" suffix=")">
+      <ns0:choose>
+        <ns0:if type="patent">
+          
+          <ns0:group delimiter=" ">
+            <ns0:text variable="authority" form="short" />
+            <ns0:choose>
+              <ns0:if variable="genre">
+                <ns0:text variable="genre" text-case="capitalize-first" />
+              </ns0:if>
+              <ns0:else>
+                
+                <ns0:text value="patent" text-case="capitalize-first" />
+              </ns0:else>
+            </ns0:choose>
+            <ns0:group delimiter=" ">
+              
+              <ns0:text term="issue" form="short" text-case="capitalize-first" />
+              <ns0:text variable="number" />
+            </ns0:group>
+          </ns0:group>
+        </ns0:if>
+        <ns0:else-if type="post webpage" match="any">
+          
+          <ns0:group delimiter="; ">
+            <ns0:text macro="secondary-contributors" />
+            <ns0:text macro="database-location" />
+            <ns0:text macro="number" />
+            <ns0:text macro="locators-booklike" />
+          </ns0:group>
+        </ns0:else-if>
+        <ns0:else-if variable="container-title">
+          <ns0:group delimiter="; ">
+            <ns0:text macro="secondary-contributors" />
+            <ns0:choose>
+              <ns0:if type="broadcast graphic map motion_picture song" match="any">
+                
+                <ns0:text macro="number" />
+              </ns0:if>
+            </ns0:choose>
+          </ns0:group>
+        </ns0:else-if>
+        <ns0:else>
+          <ns0:group delimiter="; ">
+            <ns0:text macro="secondary-contributors" />
+            <ns0:text macro="database-location" />
+            <ns0:text macro="number" />
+            <ns0:text macro="locators-booklike" />
+          </ns0:group>
+        </ns0:else>
+      </ns0:choose>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="parenthetical-container">
+    <ns0:choose>
+      <ns0:if variable="container-title" match="any">
+        <ns0:group prefix="(" suffix=")">
+          <ns0:group delimiter="; ">
+            <ns0:text macro="database-location" />
+            <ns0:choose>
+              <ns0:if type="broadcast graphic map motion_picture song" match="none">
+                
+                <ns0:text macro="number" />
+              </ns0:if>
+            </ns0:choose>
+            <ns0:text macro="locators-booklike" />
+          </ns0:group>
+        </ns0:group>
+      </ns0:if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="bracketed">
+    
+    
+    <ns0:group prefix="[" suffix="]">
+      <ns0:choose>
+        <ns0:if variable="reviewed-author reviewed-title" type="review review-book" match="any">
+          
+          <ns0:group delimiter="; ">
+            <ns0:group delimiter=", ">
+              <ns0:group delimiter=" ">
+                
+                <ns0:choose>
+                  <ns0:if variable="number" match="none">
+                    <ns0:choose>
+                      <ns0:if variable="genre">
+                        <ns0:text variable="genre" text-case="capitalize-first" />
+                      </ns0:if>
+                      <ns0:else-if variable="medium">
+                        <ns0:text variable="medium" text-case="capitalize-first" />
+                      </ns0:else-if>
+                      <ns0:else>
+                        
+                        <ns0:text value="Review of" />
+                      </ns0:else>
+                    </ns0:choose>
+                  </ns0:if>
+                  <ns0:else>
+                    <ns0:choose>
+                      <ns0:if variable="medium">
+                        <ns0:text variable="medium" text-case="capitalize-first" />
+                      </ns0:if>
+                      <ns0:else>
+                        
+                        <ns0:text value="Review of" />
+                      </ns0:else>
+                    </ns0:choose>
+                  </ns0:else>
+                </ns0:choose>
+                <ns0:text macro="reviewed-title" />
+              </ns0:group>
+              <ns0:names variable="reviewed-author">
+                <ns0:label form="verb-short" suffix=" " />
+                <ns0:name and="text" initialize-with=". " delimiter="·" />
+              </ns0:names>
+            </ns0:group>
+            <ns0:choose>
+              <ns0:if variable="genre" match="any">
+                <ns0:choose>
+                  <ns0:if variable="number" match="none">
+                    <ns0:text variable="medium" text-case="capitalize-first" />
+                  </ns0:if>
+                </ns0:choose>
+              </ns0:if>
+            </ns0:choose>
+          </ns0:group>
+        </ns0:if>
+        <ns0:else-if type="thesis">
+          
+          <ns0:group delimiter="; ">
+            <ns0:choose>
+              <ns0:if variable="number" match="none">
+                <ns0:group delimiter=", ">
+                  <ns0:text variable="genre" text-case="capitalize-first" />
+                  <ns0:choose>
+                    <ns0:if variable="archive DOI URL" match="any">
+                      
+                      <ns0:text variable="publisher" />
+                    </ns0:if>
+                  </ns0:choose>
+                </ns0:group>
+              </ns0:if>
+            </ns0:choose>
+            <ns0:text variable="medium" text-case="capitalize-first" />
+          </ns0:group>
+        </ns0:else-if>
+        <ns0:else-if variable="interviewer" type="interview" match="any">
+          
+          <ns0:choose>
+            <ns0:if variable="title">
+              <ns0:text macro="format" />
+            </ns0:if>
+            <ns0:else-if variable="genre">
+              <ns0:group delimiter="; ">
+                <ns0:group delimiter=" ">
+                  <ns0:text variable="genre" text-case="capitalize-first" />
+                  <ns0:group delimiter=" ">
+                    <ns0:text term="author" form="verb" />
+                    <ns0:names variable="interviewer">
+                      <ns0:name and="text" initialize-with=". " delimiter="·" />
+                    </ns0:names>
+                  </ns0:group>
+                </ns0:group>
+              </ns0:group>
+            </ns0:else-if>
+            <ns0:else-if variable="interviewer">
+              <ns0:group delimiter="; ">
+                <ns0:names variable="interviewer">
+                  <ns0:label form="verb" suffix=" " text-case="capitalize-first" />
+                  <ns0:name and="text" initialize-with=". " delimiter="·" />
+                </ns0:names>
+                <ns0:text variable="medium" text-case="capitalize-first" />
+              </ns0:group>
+            </ns0:else-if>
+            <ns0:else>
+              <ns0:text macro="format" />
+            </ns0:else>
+          </ns0:choose>
+        </ns0:else-if>
+        <ns0:else-if type="personal_communication">
+          
+          <ns0:choose>
+            <ns0:if variable="recipient">
+              <ns0:group delimiter="; ">
+                <ns0:group delimiter=" ">
+                  <ns0:choose>
+                    <ns0:if variable="number" match="none">
+                      <ns0:choose>
+                        <ns0:if variable="genre">
+                          <ns0:text variable="genre" text-case="capitalize-first" />
+                        </ns0:if>
+                        <ns0:else-if variable="medium">
+                          <ns0:text variable="medium" text-case="capitalize-first" />
+                        </ns0:else-if>
+                        <ns0:else>
+                          <ns0:text term="letter" form="short" text-case="capitalize-first" />
+                        </ns0:else>
+                      </ns0:choose>
+                    </ns0:if>
+                    <ns0:else>
+                      <ns0:choose>
+                        <ns0:if variable="medium">
+                          <ns0:text variable="medium" text-case="capitalize-first" />
+                        </ns0:if>
+                        <ns0:else>
+                          <ns0:text term="letter" form="short" text-case="capitalize-first" />
+                        </ns0:else>
+                      </ns0:choose>
+                    </ns0:else>
+                  </ns0:choose>
+                  <ns0:names variable="recipient" delimiter=", ">
+                    <ns0:label form="verb" suffix=" " />
+                    <ns0:name and="text" delimiter="·" />
+                  </ns0:names>
+                </ns0:group>
+                <ns0:choose>
+                  <ns0:if variable="genre" match="any">
+                    <ns0:choose>
+                      <ns0:if variable="number" match="none">
+                        <ns0:text variable="medium" text-case="capitalize-first" />
+                      </ns0:if>
+                    </ns0:choose>
+                  </ns0:if>
+                </ns0:choose>
+              </ns0:group>
+            </ns0:if>
+            <ns0:else>
+              <ns0:text macro="format" />
+            </ns0:else>
+          </ns0:choose>
+        </ns0:else-if>
+        <ns0:else-if variable="composer" type="song" match="all">
+          
+          <ns0:group delimiter="; ">
+            <ns0:choose>
+              <ns0:if variable="number" match="none">
+                <ns0:group delimiter=" ">
+                  <ns0:choose>
+                    <ns0:if variable="genre">
+                      <ns0:text variable="genre" text-case="capitalize-first" />
+                      
+                      <ns0:names variable="author" prefix="recorded by ">
+                        <ns0:name and="text" initialize-with=". " delimiter="·" />
+                      </ns0:names>
+                    </ns0:if>
+                    <ns0:else-if variable="medium">
+                      <ns0:text variable="medium" text-case="capitalize-first" />
+                      
+                      <ns0:names variable="author" prefix="recorded by ">
+                        <ns0:name and="text" initialize-with=". " delimiter="·" />
+                      </ns0:names>
+                    </ns0:else-if>
+                    <ns0:else>
+                      
+                      <ns0:names variable="author" prefix="Recorded by ">
+                        <ns0:name and="text" initialize-with=". " delimiter="·" />
+                      </ns0:names>
+                    </ns0:else>
+                  </ns0:choose>
+                </ns0:group>
+              </ns0:if>
+              <ns0:else>
+                <ns0:group delimiter=" ">
+                  <ns0:choose>
+                    <ns0:if variable="medium">
+                      <ns0:text variable="medium" text-case="capitalize-first" />
+                      
+                      <ns0:names variable="author" prefix="recorded by ">
+                        <ns0:name and="text" initialize-with=". " delimiter="·" />
+                      </ns0:names>
+                    </ns0:if>
+                    <ns0:else>
+                      
+                      <ns0:names variable="author" prefix="Recorded by ">
+                        <ns0:name and="text" initialize-with=". " delimiter="·" />
+                      </ns0:names>
+                    </ns0:else>
+                  </ns0:choose>
+                </ns0:group>
+              </ns0:else>
+            </ns0:choose>
+            <ns0:choose>
+              <ns0:if variable="genre" match="any">
+                <ns0:choose>
+                  <ns0:if variable="number" match="none">
+                    <ns0:text variable="medium" text-case="capitalize-first" />
+                  </ns0:if>
+                </ns0:choose>
+              </ns0:if>
+            </ns0:choose>
+          </ns0:group>
+        </ns0:else-if>
+        <ns0:else-if variable="container-title" match="none">
+          
+          <ns0:text macro="format" />
+        </ns0:else-if>
+        <ns0:else>
+          
+          <ns0:choose>
+            <ns0:if type="paper-conference speech" match="any">
+              <ns0:choose>
+                <ns0:if variable="collection-editor editor editorial-director issue page volume" match="any">
+                  <ns0:text macro="format" />
+                </ns0:if>
+              </ns0:choose>
+            </ns0:if>
+            <ns0:else-if type="book">
+              <ns0:choose>
+                <ns0:if variable="version" match="none">
+                  <ns0:text macro="format" />
+                </ns0:if>
+              </ns0:choose>
+            </ns0:else-if>
+            <ns0:else-if type="report" match="none">
+              <ns0:text macro="format" />
+            </ns0:else-if>
+          </ns0:choose>
+        </ns0:else>
+      </ns0:choose>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="bracketed-intext">
+    <ns0:group prefix="[" suffix="]">
+      <ns0:choose>
+        <ns0:if variable="reviewed-author reviewed-title" type="review review-book" match="any">
+          
+          <ns0:text macro="reviewed-title-intext" prefix="Review of " />
+        </ns0:if>
+        <ns0:else-if variable="interviewer" type="interview" match="any">
+          <ns0:names variable="interviewer">
+            <ns0:label form="verb" suffix=" " text-case="capitalize-first" />
+            <ns0:name and="text" initialize-with=". " delimiter="·" />
+            <ns0:substitute>
+              <ns0:text macro="format-intext" />
+            </ns0:substitute>
+          </ns0:names>
+        </ns0:else-if>
+        <ns0:else-if type="personal_communication">
+          
+          <ns0:choose>
+            <ns0:if variable="recipient">
+              <ns0:group delimiter=" ">
+                <ns0:choose>
+                  <ns0:if variable="number" match="none">
+                    <ns0:text variable="genre" text-case="capitalize-first" />
+                  </ns0:if>
+                  <ns0:else>
+                    <ns0:text term="letter" form="short" text-case="capitalize-first" />
+                  </ns0:else>
+                </ns0:choose>
+                <ns0:names variable="recipient" delimiter=", ">
+                  <ns0:label form="verb" suffix=" " />
+                  <ns0:name and="text" delimiter="·" />
+                </ns0:names>
+              </ns0:group>
+            </ns0:if>
+            <ns0:else>
+              <ns0:text macro="format-intext" />
+            </ns0:else>
+          </ns0:choose>
+        </ns0:else-if>
+        <ns0:else>
+          <ns0:text macro="format-intext" />
+        </ns0:else>
+      </ns0:choose>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="bracketed-container">
+    <ns0:group prefix="[" suffix="]">
+      <ns0:choose>
+        <ns0:if type="paper-conference speech" match="any">
+          
+          <ns0:choose>
+            <ns0:if variable="collection-editor editor editorial-director issue page volume" match="none">
+              <ns0:text macro="format" />
+            </ns0:if>
+          </ns0:choose>
+        </ns0:if>
+        <ns0:else-if type="book" variable="version" match="all">
+          
+          <ns0:text macro="format" />
+        </ns0:else-if>
+        <ns0:else-if type="report">
+          
+          <ns0:text macro="format" />
+        </ns0:else-if>
+      </ns0:choose>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="secondary-contributors">
+    <ns0:choose>
+      <ns0:if type="article-journal article-magazine article-newspaper post-weblog review review-book" match="any">
+        <ns0:text macro="secondary-contributors-periodical" />
+      </ns0:if>
+      <ns0:else-if type="paper-conference">
+        <ns0:choose>
+          <ns0:if variable="collection-editor editor editorial-director" match="any">
+            <ns0:text macro="secondary-contributors-booklike" />
+          </ns0:if>
+          <ns0:else>
+            <ns0:text macro="secondary-contributors-periodical" />
+          </ns0:else>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:text macro="secondary-contributors-booklike" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="secondary-contributors-periodical">
+    <ns0:group delimiter="; ">
+      <ns0:choose>
+        <ns0:if variable="title">
+          <ns0:names variable="interviewer" delimiter="; ">
+            <ns0:name and="text" initialize-with=". " delimiter="·" />
+            <ns0:label form="short" prefix=", " text-case="title" />
+          </ns0:names>
+        </ns0:if>
+      </ns0:choose>
+      <ns0:names variable="translator" delimiter="; ">
+        <ns0:name and="text" initialize-with=". " delimiter="·" />
+        <ns0:label form="short" prefix=", " text-case="title" />
+      </ns0:names>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="secondary-contributors-booklike">
+    <ns0:group delimiter="; ">
+      <ns0:choose>
+        <ns0:if variable="title">
+          <ns0:names variable="interviewer">
+            <ns0:name and="text" initialize-with=". " delimiter="·" />
+            <ns0:label form="short" prefix=", " text-case="title" />
+          </ns0:names>
+        </ns0:if>
+      </ns0:choose>
+      
+      <ns0:choose>
+        <ns0:if type="post webpage" match="none">
+          
+          <ns0:choose>
+            <ns0:if variable="container-title" match="none">
+              <ns0:group delimiter="; ">
+                <ns0:names variable="container-author">
+                  <ns0:label form="verb-short" suffix=" " text-case="title" />
+                  <ns0:name and="text" initialize-with=". " delimiter="·" />
+                </ns0:names>
+                <ns0:names variable="editor translator" delimiter="; ">
+                  <ns0:name and="text" initialize-with=". " delimiter="·" />
+                  <ns0:label form="short" prefix=", " text-case="title" />
+                </ns0:names>
+              </ns0:group>
+            </ns0:if>
+          </ns0:choose>
+        </ns0:if>
+        <ns0:else>
+          <ns0:group delimiter="; ">
+            <ns0:names variable="container-author">
+              <ns0:label form="verb-short" suffix=" " text-case="title" />
+              <ns0:name and="text" initialize-with=". " delimiter="·" />
+            </ns0:names>
+            <ns0:names variable="editor translator" delimiter="; ">
+              <ns0:name and="text" initialize-with=". " delimiter="·" />
+              <ns0:label form="short" prefix=", " text-case="title" />
+            </ns0:names>
+          </ns0:group>
+        </ns0:else>
+      </ns0:choose>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="database-location">
+    <ns0:choose>
+      <ns0:if variable="archive-place" match="none">
+        
+        
+        <ns0:text variable="archive_location" />
+      </ns0:if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="number">
+    <ns0:choose>
+      <ns0:if variable="number">
+        <ns0:group delimiter=", ">
+          <ns0:group delimiter=" ">
+            <ns0:text variable="genre" text-case="title" />
+            <ns0:choose>
+              <ns0:if is-numeric="number">
+                
+                <ns0:text term="issue" form="short" text-case="capitalize-first" />
+                <ns0:text variable="number" />
+              </ns0:if>
+              <ns0:else>
+                <ns0:text variable="number" />
+              </ns0:else>
+            </ns0:choose>
+          </ns0:group>
+          <ns0:choose>
+            <ns0:if type="thesis">
+              <ns0:choose>
+                
+                <ns0:if variable="archive DOI URL" match="any">
+                  <ns0:text variable="publisher" />
+                </ns0:if>
+              </ns0:choose>
+            </ns0:if>
+          </ns0:choose>
+        </ns0:group>
+      </ns0:if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="locators-booklike">
+    <ns0:choose>
+      <ns0:if type="article-journal article-magazine article-newspaper broadcast interview patent post post-weblog review review-book speech webpage" match="any" />
+      <ns0:else-if type="paper-conference">
+        <ns0:choose>
+          <ns0:if variable="collection-editor editor editorial-director" match="any">
+            <ns0:group delimiter=", ">
+              <ns0:text macro="version" />
+              <ns0:text macro="edition" />
+              <ns0:text macro="volume-booklike" />
+            </ns0:group>
+          </ns0:if>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else>
+        <ns0:group delimiter=", ">
+          <ns0:text macro="version" />
+          <ns0:text macro="edition" />
+          <ns0:text macro="volume-booklike" />
+        </ns0:group>
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="version">
+    <ns0:choose>
+      <ns0:if is-numeric="version">
+        <ns0:group delimiter=" ">
+          
+          <ns0:text term="version" text-case="capitalize-first" />
+          <ns0:text variable="version" />
+        </ns0:group>
+      </ns0:if>
+      <ns0:else>
+        <ns0:text variable="version" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="edition">
+    <ns0:choose>
+      <ns0:if is-numeric="edition">
+        <ns0:group delimiter=" ">
+          <ns0:number variable="edition" form="ordinal" />
+          <ns0:label variable="edition" form="short" />
+        </ns0:group>
+      </ns0:if>
+      <ns0:else>
+        <ns0:text variable="edition" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="volume-booklike">
+    <ns0:group delimiter=", ">
+      
+      <ns0:choose>
+        <ns0:if type="report">
+          <ns0:group delimiter=" ">
+            <ns0:text variable="collection-title" text-case="title" />
+            <ns0:text variable="collection-number" />
+          </ns0:group>
+        </ns0:if>
+      </ns0:choose>
+      <ns0:choose>
+        <ns0:if variable="volume" match="any">
+          <ns0:choose>
+            
+            <ns0:if is-numeric="volume" match="none" />
+            <ns0:else>
+              <ns0:group delimiter=" ">
+                <ns0:label variable="volume" form="short" text-case="capitalize-first" />
+                <ns0:number variable="volume" form="numeric" />
+              </ns0:group>
+            </ns0:else>
+          </ns0:choose>
+        </ns0:if>
+        <ns0:else>
+          <ns0:group>
+            
+            <ns0:text term="volume" form="short" text-case="capitalize-first" suffix=" " />
+            <ns0:text term="page-range-delimiter" prefix="1" />
+            <ns0:number variable="number-of-volumes" form="numeric" />
+          </ns0:group>
+        </ns0:else>
+      </ns0:choose>
+      <ns0:group delimiter=" ">
+        <ns0:label variable="issue" text-case="capitalize-first" />
+        <ns0:text variable="issue" />
+      </ns0:group>
+      <ns0:group delimiter=" ">
+        <ns0:label variable="page" form="short" suffix=" " />
+        <ns0:text variable="page" />
+      </ns0:group>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="reviewed-title">
+    <ns0:choose>
+      <ns0:if variable="reviewed-title">
+        
+        <ns0:text variable="reviewed-title" font-style="italic" />
+      </ns0:if>
+      <ns0:else>
+        
+        <ns0:text variable="title" font-style="italic" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="reviewed-title-intext">
+    <ns0:choose>
+      <ns0:if variable="reviewed-title">
+        
+        <ns0:text variable="reviewed-title" form="short" font-style="italic" text-case="title" />
+      </ns0:if>
+      <ns0:else>
+        
+        <ns0:text variable="title" form="short" font-style="italic" text-case="title" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="format">
+    <ns0:choose>
+      <ns0:if variable="genre medium" match="any">
+        <ns0:group delimiter="; ">
+          <ns0:choose>
+            <ns0:if variable="number" match="none">
+              <ns0:text variable="genre" text-case="capitalize-first" />
+            </ns0:if>
+          </ns0:choose>
+          <ns0:text variable="medium" text-case="capitalize-first" />
+        </ns0:group>
+      </ns0:if>
+      
+      
+      <ns0:else-if type="dataset">
+        <ns0:text value="Data set" />
+      </ns0:else-if>
+      <ns0:else-if type="book" variable="version" match="all">
+        
+        <ns0:text value="Computer software" />
+      </ns0:else-if>
+      <ns0:else-if type="interview personal_communication" match="any">
+        <ns0:choose>
+          <ns0:if variable="archive container-title DOI publisher URL" match="none">
+            <ns0:text term="letter" text-case="capitalize-first" />
+          </ns0:if>
+          <ns0:else-if type="interview">
+            <ns0:text term="interview" text-case="capitalize-first" />
+          </ns0:else-if>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else-if type="map">
+        <ns0:text value="Map" />
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="format-intext">
+    <ns0:choose>
+      <ns0:if variable="genre" match="any">
+        <ns0:text variable="genre" text-case="capitalize-first" />
+      </ns0:if>
+      <ns0:else-if variable="medium">
+        <ns0:text variable="medium" text-case="capitalize-first" />
+      </ns0:else-if>
+      
+      
+      <ns0:else-if type="dataset">
+        <ns0:text value="Data set" />
+      </ns0:else-if>
+      <ns0:else-if type="book" variable="version" match="all">
+        
+        <ns0:text value="Computer software" />
+      </ns0:else-if>
+      <ns0:else-if type="interview personal_communication" match="any">
+        <ns0:choose>
+          <ns0:if variable="archive container-title DOI publisher URL" match="none">
+            <ns0:text term="letter" text-case="capitalize-first" />
+          </ns0:if>
+          <ns0:else-if type="interview">
+            <ns0:text term="interview" text-case="capitalize-first" />
+          </ns0:else-if>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else-if type="map">
+        <ns0:text value="Map" />
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  
+  <ns0:macro name="container">
+    <ns0:choose>
+      <ns0:if type="article-journal article-magazine article-newspaper post-weblog review review-book" match="any">
+        
+        <ns0:text macro="container-periodical" />
+      </ns0:if>
+      <ns0:else-if type="paper-conference">
+        
+        <ns0:choose>
+          <ns0:if variable="editor editorial-director collection-editor container-author" match="any">
+            <ns0:text macro="container-booklike" />
+          </ns0:if>
+          <ns0:else>
+            <ns0:text macro="container-periodical" />
+          </ns0:else>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else-if type="post webpage" match="none">
+        
+        <ns0:text macro="container-booklike" />
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="container-periodical">
+    <ns0:group delimiter=". ">
+      <ns0:group delimiter=", ">
+        <ns0:text variable="container-title" font-style="italic" text-case="title" />
+        <ns0:choose>
+          <ns0:if variable="volume">
+            <ns0:group>
+              <ns0:text variable="volume" font-style="italic" />
+              <ns0:text variable="issue" prefix="(" suffix=")" />
+            </ns0:group>
+          </ns0:if>
+          <ns0:else>
+            <ns0:text variable="issue" font-style="italic" />
+          </ns0:else>
+        </ns0:choose>
+        <ns0:choose>
+          <ns0:if variable="number">
+            
+            
+            <ns0:group delimiter=" ">
+              <ns0:text term="article-locator" text-case="capitalize-first" />
+              <ns0:text variable="number" />
+            </ns0:group>
+          </ns0:if>
+          <ns0:else>
+            <ns0:text variable="page" />
+          </ns0:else>
+        </ns0:choose>
+      </ns0:group>
+      <ns0:choose>
+        <ns0:if variable="issued">
+          <ns0:choose>
+            <ns0:if variable="issue page volume" match="none">
+              <ns0:text variable="status" text-case="capitalize-first" />
+            </ns0:if>
+          </ns0:choose>
+        </ns0:if>
+      </ns0:choose>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="container-booklike">
+    <ns0:choose>
+      <ns0:if variable="container-title" match="any">
+        <ns0:group delimiter=" ">
+          <ns0:text term="in" text-case="capitalize-first" />
+          <ns0:group delimiter=", ">
+            <ns0:names variable="editor translator" delimiter=", &amp; ">
+              
+              <ns0:name and="text" initialize-with=". " delimiter="·" />
+              <ns0:label form="short" text-case="title" prefix=" (" suffix=")" />
+              <ns0:substitute>
+                <ns0:names variable="editorial-director" />
+                <ns0:names variable="collection-editor" />
+                <ns0:names variable="container-author" />
+              </ns0:substitute>
+            </ns0:names>
+            <ns0:group delimiter=": " font-style="italic">
+              <ns0:text variable="container-title" />
+              
+              <ns0:choose>
+                <ns0:if is-numeric="volume" match="none">
+                  <ns0:group delimiter=" ">
+                    <ns0:label variable="volume" form="short" text-case="capitalize-first" />
+                    <ns0:text variable="volume" />
+                  </ns0:group>
+                </ns0:if>
+              </ns0:choose>
+            </ns0:group>
+          </ns0:group>
+          <ns0:text macro="parenthetical-container" />
+          <ns0:text macro="bracketed-container" />
+        </ns0:group>
+      </ns0:if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="publisher">
+    <ns0:group delimiter="; ">
+      <ns0:choose>
+        <ns0:if type="thesis">
+          <ns0:choose>
+            <ns0:if variable="archive DOI URL" match="none">
+              <ns0:text variable="publisher" />
+            </ns0:if>
+          </ns0:choose>
+        </ns0:if>
+        <ns0:else-if type="post webpage" match="any">
+          
+          <ns0:group delimiter="; ">
+            <ns0:text variable="container-title" text-case="title" />
+            <ns0:text variable="publisher" />
+          </ns0:group>
+        </ns0:else-if>
+        <ns0:else-if type="paper-conference">
+          
+          <ns0:choose>
+            <ns0:if variable="collection-editor editor editorial-director" match="any">
+              <ns0:text variable="publisher" />
+            </ns0:if>
+          </ns0:choose>
+        </ns0:else-if>
+        <ns0:else-if type="article-journal article-magazine article-newspaper post-weblog" match="none">
+          <ns0:text variable="publisher" />
+        </ns0:else-if>
+      </ns0:choose>
+      <ns0:group delimiter=", ">
+        <ns0:choose>
+          <ns0:if variable="archive-place">
+            
+            
+            
+            
+            <ns0:text variable="archive_location" />
+          </ns0:if>
+        </ns0:choose>
+        <ns0:text variable="archive" />
+        <ns0:text variable="archive-place" />
+      </ns0:group>
+    </ns0:group>
+  </ns0:macro>
+  <ns0:macro name="access">
+    <ns0:choose>
+      <ns0:if variable="DOI" match="any">
+        <ns0:text variable="DOI" prefix="https://doi.org/" />
+      </ns0:if>
+      <ns0:else-if variable="URL">
+        <ns0:group delimiter=" ">
+          <ns0:choose>
+            <ns0:if variable="issued status" match="none">
+              <ns0:group delimiter=" ">
+                <ns0:text term="retrieved" text-case="capitalize-first" />
+                <ns0:date variable="accessed" form="text" suffix="," />
+                <ns0:text term="from" />
+              </ns0:group>
+            </ns0:if>
+          </ns0:choose>
+          <ns0:text variable="URL" />
+        </ns0:group>
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="event">
+    <ns0:choose>
+      <ns0:if variable="event event-title" match="any">
+        
+        <ns0:choose>
+          <ns0:if variable="collection-editor editor editorial-director issue page volume" match="none">
+            
+            <ns0:group delimiter=", ">
+              <ns0:text macro="event-title" />
+              <ns0:text variable="event-place" />
+            </ns0:group>
+          </ns0:if>
+        </ns0:choose>
+      </ns0:if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="event-title">
+    <ns0:choose>
+      
+      <ns0:if variable="event-title">
+        <ns0:text variable="event-title" />
+      </ns0:if>
+      <ns0:else>
+        <ns0:text variable="event" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  
+  <ns0:macro name="publication-history">
+    <ns0:choose>
+      <ns0:if type="patent" match="none">
+        <ns0:group prefix="(" suffix=")">
+          <ns0:choose>
+            <ns0:if variable="references">
+              
+              <ns0:text variable="references" />
+            </ns0:if>
+            <ns0:else>
+              <ns0:group delimiter=" ">
+                <ns0:text value="Original work published" />
+                <ns0:choose>
+                  <ns0:if is-uncertain-date="original-date">
+                    <ns0:text term="circa" form="short" />
+                  </ns0:if>
+                </ns0:choose>
+                <ns0:date variable="original-date">
+                  <ns0:date-part name="year" />
+                </ns0:date>
+              </ns0:group>
+            </ns0:else>
+          </ns0:choose>
+        </ns0:group>
+      </ns0:if>
+      <ns0:else>
+        <ns0:text variable="references" prefix="(" suffix=")" />
+      </ns0:else>
+    </ns0:choose>
+  </ns0:macro>
+  
+  <ns0:macro name="legal-cites">
+    <ns0:choose>
+      <ns0:if type="legal_case">
+        <ns0:group delimiter=". ">
+          <ns0:group delimiter=", ">
+            <ns0:text variable="title" />
+            <ns0:group delimiter=" ">
+              <ns0:text macro="container-legal" />
+              <ns0:text macro="date-legal" />
+            </ns0:group>
+            <ns0:text variable="references" />
+          </ns0:group>
+          <ns0:text macro="access" />
+        </ns0:group>
+      </ns0:if>
+      <ns0:else-if type="bill">
+        
+        <ns0:group delimiter=". ">
+          <ns0:group delimiter=", ">
+            <ns0:choose>
+              <ns0:if variable="number container-title" match="none">
+                
+                <ns0:text variable="title" font-style="italic" />
+              </ns0:if>
+              <ns0:else>
+                <ns0:text variable="title" />
+              </ns0:else>
+            </ns0:choose>
+            <ns0:group delimiter=" ">
+              <ns0:text macro="container-legal" />
+              <ns0:text macro="date-legal" />
+              <ns0:choose>
+                <ns0:if variable="number container-title" match="none">
+                  
+                  <ns0:names variable="author" prefix="(testimony of " suffix=")">
+                    <ns0:name and="text" delimiter="·" />
+                  </ns0:names>
+                </ns0:if>
+                <ns0:else>
+                  <ns0:text variable="status" prefix="(" suffix=")" />
+                </ns0:else>
+              </ns0:choose>
+            </ns0:group>
+            <ns0:text variable="references" />
+          </ns0:group>
+          <ns0:text macro="access" />
+        </ns0:group>
+      </ns0:else-if>
+      <ns0:else-if type="legislation">
+        
+        <ns0:group delimiter=". ">
+          <ns0:group delimiter=", ">
+            <ns0:text variable="title" />
+            <ns0:group delimiter=" ">
+              <ns0:text macro="container-legal" />
+              <ns0:text macro="date-legal" />
+              <ns0:text variable="status" prefix="(" suffix=")" />
+            </ns0:group>
+            <ns0:text variable="references" />
+          </ns0:group>
+          <ns0:text macro="access" />
+        </ns0:group>
+      </ns0:else-if>
+      <ns0:else-if type="treaty">
+        
+        <ns0:group delimiter=", ">
+          <ns0:text variable="title" text-case="title" />
+          <ns0:names variable="author">
+            <ns0:name initialize-with="." form="short" delimiter="·" and="text" />
+          </ns0:names>
+          <ns0:text macro="date-legal" />
+          <ns0:text macro="container-legal" />
+          <ns0:text macro="access" />
+        </ns0:group>
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="date-legal">
+    <ns0:choose>
+      <ns0:if type="legal_case">
+        <ns0:group prefix="(" suffix=")" delimiter=" ">
+          <ns0:text variable="authority" />
+          <ns0:choose>
+            <ns0:if variable="container-title" match="any">
+              
+              <ns0:date variable="issued" form="numeric" date-parts="year" />
+            </ns0:if>
+            <ns0:else>
+              <ns0:date variable="issued" form="text" />
+            </ns0:else>
+          </ns0:choose>
+        </ns0:group>
+      </ns0:if>
+      <ns0:else-if type="bill legislation" match="any">
+        <ns0:group prefix="(" suffix=")" delimiter=" ">
+          <ns0:group delimiter=" ">
+            <ns0:date variable="original-date">
+              <ns0:date-part name="year" />
+            </ns0:date>
+            <ns0:text term="and" form="symbol" />
+          </ns0:group>
+          <ns0:date variable="issued">
+            <ns0:date-part name="year" />
+          </ns0:date>
+        </ns0:group>
+      </ns0:else-if>
+      <ns0:else-if type="treaty">
+        <ns0:date variable="issued" form="text" />
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="container-legal">
+    
+    <ns0:choose>
+      <ns0:if type="legal_case">
+        <ns0:group delimiter=" ">
+          <ns0:choose>
+            <ns0:if variable="container-title">
+              <ns0:group delimiter=" ">
+                <ns0:text variable="volume" />
+                <ns0:text variable="container-title" />
+                <ns0:group delimiter=" ">
+                  
+                  <ns0:text term="section" form="symbol" />
+                  <ns0:text variable="section" />
+                </ns0:group>
+                <ns0:choose>
+                  <ns0:if variable="page page-first" match="any">
+                    <ns0:text variable="page-first" />
+                  </ns0:if>
+                  <ns0:else>
+                    <ns0:text value="___" />
+                  </ns0:else>
+                </ns0:choose>
+              </ns0:group>
+            </ns0:if>
+            <ns0:else>
+              <ns0:group delimiter=" ">
+                <ns0:choose>
+                  <ns0:if is-numeric="number">
+                    
+                    <ns0:text term="issue" form="short" text-case="capitalize-first" />
+                  </ns0:if>
+                </ns0:choose>
+                <ns0:text variable="number" />
+              </ns0:group>
+            </ns0:else>
+          </ns0:choose>
+        </ns0:group>
+      </ns0:if>
+      <ns0:else-if type="bill">
+        <ns0:group delimiter=", ">
+          <ns0:group delimiter=" ">
+            <ns0:text variable="genre" />
+            <ns0:group delimiter=" ">
+              <ns0:choose>
+                <ns0:if variable="chapter-number container-title" match="none">
+                  
+                  <ns0:text term="issue" form="short" />
+                </ns0:if>
+              </ns0:choose>
+              <ns0:text variable="number" />
+            </ns0:group>
+          </ns0:group>
+          <ns0:text variable="authority" />
+          <ns0:text variable="chapter-number" />
+          <ns0:group delimiter=" ">
+            <ns0:text variable="volume" />
+            <ns0:text variable="container-title" />
+            <ns0:text variable="page-first" />
+          </ns0:group>
+        </ns0:group>
+      </ns0:else-if>
+      <ns0:else-if type="legislation">
+        <ns0:choose>
+          <ns0:if variable="number">
+            
+            <ns0:group delimiter=", ">
+              <ns0:text variable="number" prefix="Pub. L. No. " />
+              <ns0:group delimiter=" ">
+                <ns0:text variable="volume" />
+                <ns0:text variable="container-title" />
+                <ns0:text variable="page-first" />
+              </ns0:group>
+            </ns0:group>
+          </ns0:if>
+          <ns0:else>
+            <ns0:group delimiter=" ">
+              <ns0:text variable="volume" />
+              <ns0:text variable="container-title" />
+              <ns0:choose>
+                <ns0:if variable="section">
+                  <ns0:group delimiter=" ">
+                    
+                    <ns0:text term="section" form="symbol" />
+                    <ns0:text variable="section" />
+                  </ns0:group>
+                </ns0:if>
+                <ns0:else>
+                  <ns0:text variable="page-first" />
+                </ns0:else>
+              </ns0:choose>
+            </ns0:group>
+          </ns0:else>
+        </ns0:choose>
+      </ns0:else-if>
+      <ns0:else-if type="treaty">
+        <ns0:group delimiter=" ">
+          <ns0:number variable="volume" />
+          <ns0:text variable="container-title" />
+          <ns0:choose>
+            <ns0:if variable="page page-first" match="any">
+              <ns0:text variable="page-first" />
+            </ns0:if>
+            <ns0:else>
+              <ns0:group delimiter=" ">
+                
+                <ns0:text term="issue" form="short" text-case="capitalize-first" />
+                <ns0:text variable="number" />
+              </ns0:group>
+            </ns0:else>
+          </ns0:choose>
+        </ns0:group>
+      </ns0:else-if>
+    </ns0:choose>
+  </ns0:macro>
+  <ns0:macro name="citation-locator">
+    <ns0:group delimiter=" ">
+      <ns0:choose>
+        <ns0:if locator="chapter">
+          <ns0:label variable="locator" text-case="capitalize-first" />
+        </ns0:if>
+        <ns0:else>
+          <ns0:label variable="locator" form="short" />
+        </ns0:else>
+      </ns0:choose>
+      <ns0:text variable="locator" />
+    </ns0:group>
+  </ns0:macro>
+  <ns0:citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year" givenname-disambiguation-rule="primary-name-with-initials">
+    <ns0:sort>
+      <ns0:key macro="author-bib" names-min="3" names-use-first="1" />
+      <ns0:key macro="date-sort-group" />
+      <ns0:key macro="date-sort-date" sort="ascending" />
+      <ns0:key variable="status" />
+    </ns0:sort>
+    <ns0:layout prefix="(" suffix=")" delimiter="; ">
+      <ns0:group delimiter=", ">
+        <ns0:text macro="author-intext" />
+        <ns0:text macro="date-intext" />
+        <ns0:text macro="citation-locator" />
+      </ns0:group>
+    </ns0:layout>
+  </ns0:citation>
+  <ns0:bibliography hanging-indent="true" et-al-min="21" et-al-use-first="19" et-al-use-last="true" entry-spacing="0" line-spacing="2">
+    <ns0:sort>
+      <ns0:key macro="author-bib" />
+      <ns0:key macro="date-sort-group" />
+      <ns0:key macro="date-sort-date" sort="ascending" />
+      <ns0:key variable="status" />
+      <ns0:key macro="title" />
+    </ns0:sort>
+    <ns0:layout>
+      <ns0:choose>
+        <ns0:if type="bill legal_case legislation treaty" match="any">
+          
+          <ns0:choose>
+            <ns0:if variable="DOI URL" match="any">
+              <ns0:text macro="legal-cites" />
+            </ns0:if>
+            <ns0:else>
+              <ns0:text macro="legal-cites" suffix="." />
+            </ns0:else>
+          </ns0:choose>
+        </ns0:if>
+        <ns0:else>
+          <ns0:group delimiter=" ">
+            <ns0:group delimiter=". " suffix=".">
+              <ns0:text macro="author-bib" />
+              <ns0:text macro="date-bib" />
+              <ns0:text macro="title-and-descriptions" />
+              <ns0:text macro="container" />
+              <ns0:text macro="event" />
+              <ns0:text macro="publisher" />
+            </ns0:group>
+            <ns0:text macro="access" />
+            <ns0:text macro="publication-history" />
+          </ns0:group>
+        </ns0:else>
+      </ns0:choose>
+    </ns0:layout>
+  </ns0:bibliography>
+</ns0:style>
