@@ -15,11 +15,11 @@ website:
       - text: "News | Column"
         file: index.qmd
       - text: "Notes"
-        href: notes.qmd
+        file: notes.qmd
       - text: "Research"
-        href: research/index.qmd
+        file: research/index.qmd
       - text: "PhD Thesis"
-        href: thesis/index.html
+        file: thesis/index.qmd
       - text: "About"
         file: about.qmd
     right:
