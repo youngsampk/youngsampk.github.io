@@ -8,6 +8,7 @@ author:
     # orcid: "0000-0000-0000-0000"   # ORCID ID (선택)
     # email: "example@korea.ac.kr"   # 이메일 (선택)
 date: "2025-12-03"
+lang: "ko"
 # doi: "10.XXXX/XXXXX"               # DOI (RISS 등에서 부여받은 경우)
 # abstract: |                        # 초록 (HTML 페이지 상단에 자동 표시)
 #   본 연구는 ...
