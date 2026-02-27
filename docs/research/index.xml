@@ -10,7 +10,7 @@
 <atom:link href="https://youngsampk.github.io/labor_stat/research/index.xml" rel="self" type="application/rss+xml"/>
 <description>노동 경제 사회 통계 정책 고용 노사관계 문제를 다루는 박영삼의 웹페이지</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Tue, 24 Feb 2026 05:00:52 GMT</lastBuildDate>
+<lastBuildDate>Fri, 27 Feb 2026 01:47:52 GMT</lastBuildDate>
 <item>
   <title>My Tomorrows Trial Search AI</title>
   <link>https://youngsampk.github.io/labor_stat/research/mytomorrows.html</link>
@@ -30,7 +30,7 @@
   <category>applied AI</category>
   <category>mentoring</category>
   <guid>https://youngsampk.github.io/labor_stat/research/mytomorrows.html</guid>
-  <pubDate>Tue, 24 Feb 2026 05:00:52 GMT</pubDate>
+  <pubDate>Fri, 27 Feb 2026 01:47:52 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/labor_stat/research/images/mytomorrows.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 <item>
@@ -42,7 +42,7 @@
   <category>인적용역</category>
   <category>비임금노동</category>
   <guid>https://youngsampk.github.io/labor_stat/research/nonwage_workers_2025.html</guid>
-  <pubDate>Tue, 24 Feb 2026 05:00:52 GMT</pubDate>
+  <pubDate>Fri, 27 Feb 2026 01:47:52 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/labor_stat/research/images/samzumsam.png" medium="image" type="image/png" height="90" width="144"/>
 </item>
 <item>
@@ -62,7 +62,7 @@
   <category>data architecture</category>
   <category>healthcare</category>
   <guid>https://youngsampk.github.io/labor_stat/research/pharmaccess.html</guid>
-  <pubDate>Tue, 24 Feb 2026 05:00:52 GMT</pubDate>
+  <pubDate>Fri, 27 Feb 2026 01:47:52 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/labor_stat/research/images/pharmaccess-momcare-graphic.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -84,7 +84,7 @@
   <category>english</category>
   <category>data-centric ai</category>
   <guid>https://youngsampk.github.io/labor_stat/research/sensire.html</guid>
-  <pubDate>Tue, 24 Feb 2026 05:00:52 GMT</pubDate>
+  <pubDate>Fri, 27 Feb 2026 01:47:52 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/labor_stat/research/images/sensire.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
