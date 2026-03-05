@@ -1,5 +1,6 @@
 ---
 title: "Feature"
+description: "Feature - 박영삼 노동통계 홈페이지"
 page-layout: full
 title-block-banner: true
 ---

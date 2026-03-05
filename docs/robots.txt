@@ -1,7 +1,10 @@
-# robots.txt (repo 루트)
+# robots.txt for https://youngsampk.github.io/labor_stat/
 User-agent: *
 Allow: /
+Crawl-delay: 10
 
+# Sitemap
 Sitemap: https://youngsampk.github.io/labor_stat/sitemap.xml
 
+# Daum 검색등록 인증
 #DaumWebMasterTool:c9d31e89ee7ab95b0e0bd85c5c5c39dbf77985c16573843017c86e2f96a2c920:sdc0m+wHn0R58XxAoSfALA==

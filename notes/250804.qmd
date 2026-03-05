@@ -1,5 +1,6 @@
 ---
 title: "게시글"
+description: "게시글 - 박영삼 노동통계 노트"
 author:  "박영삼"
 date: "2025-02-01"
 toc: true

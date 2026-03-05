@@ -1,5 +1,6 @@
 ---
 title: "News | Column"
+description: "News | Column - 박영삼 노동통계 홈페이지"
 listing:
   contents: posts/**/*.qmd
   sort: "date desc"

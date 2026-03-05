@@ -42,7 +42,9 @@ format:
       - cosmo
       - theme1.scss
 #    css: mystyles.css
-    include-in-header: includes/verify.html
+    include-in-header: 
+      - includes/verify.html
+      - includes/jsonld.html
     include-after-body: gtag.js
     date-format: "YYYY-MM-DD"         # 2025-08-15
     crossref:

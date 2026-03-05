@@ -1,5 +1,6 @@
 ---
 title: Research
+description: "박영삼의 연구 자료 모음 - 노동 경제 통계 분석"
 listing:
     contents: .
     type: grid

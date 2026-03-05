@@ -1,5 +1,6 @@
 ---
 title: "Notes"
+description: "Notes - 박영삼 노동통계 홈페이지"
 listing: 
   contents: notes/*.qmd
   type: table

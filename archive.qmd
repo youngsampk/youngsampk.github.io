@@ -1,5 +1,6 @@
 ---
 title: "Archive"
+description: "Archive - 박영삼 노동통계 홈페이지"
 page-layout: full
 listing:
   contents: posts/**/*.qmd
