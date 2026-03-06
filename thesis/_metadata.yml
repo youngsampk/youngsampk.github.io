@@ -16,5 +16,5 @@ crossref:
 format:
   html:
     toc: true
-    toc-depth: 3
+    toc-depth: 2
     number-sections: true
