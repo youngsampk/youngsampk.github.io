@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Park Youngsam Homepage</title>
+<link>https://youngsampk.github.io/labor_stat/research/</link>
+<atom:link href="https://youngsampk.github.io/labor_stat/research/index.xml" rel="self" type="application/rss+xml"/>
+<description>박영삼의 연구 자료 모음 - 노동 경제 통계 분석</description>
+<generator>quarto-1.5.57</generator>
+<lastBuildDate>Fri, 06 Mar 2026 02:47:02 GMT</lastBuildDate>
+<item>
+  <title>{B4F502887207:/research/mytomorrows.html}</title>
+  <link>https://youngsampk.github.io/labor_stat/research/mytomorrows.html</link>
+  <description>{B4F502887207:/research/mytomorrows.html}</description>
+  <category>applied AI</category>
+  <category>mentoring</category>
+  <guid>https://youngsampk.github.io/labor_stat/research/mytomorrows.html</guid>
+  <pubDate>Fri, 06 Mar 2026 02:47:02 GMT</pubDate>
+  <media:content url="https://youngsampk.github.io/labor_stat/research/images/mytomorrows.png" medium="image" type="image/png" height="75" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/research/nonwage_workers_2025.html}</title>
+  <dc:creator>박영삼 고려대 노동문제연구소</dc:creator>
+  <link>https://youngsampk.github.io/labor_stat/research/nonwage_workers_2025.html</link>
+  <description>{B4F502887207:/research/nonwage_workers_2025.html}</description>
+  <category>3.%</category>
+  <category>인적용역</category>
+  <category>비임금노동</category>
+  <guid>https://youngsampk.github.io/labor_stat/research/nonwage_workers_2025.html</guid>
+  <pubDate>Fri, 06 Mar 2026 02:47:02 GMT</pubDate>
+  <media:content url="https://youngsampk.github.io/labor_stat/research/images/samzumsam.png" medium="image" type="image/png" height="90" width="144"/>
+</item>
+<item>
+  <title>{B4F502887207:/research/pharmaccess.html}</title>
+  <link>https://youngsampk.github.io/labor_stat/research/pharmaccess.html</link>
+  <description>{B4F502887207:/research/pharmaccess.html}</description>
+  <category>english</category>
+  <category>data architecture</category>
+  <category>healthcare</category>
+  <guid>https://youngsampk.github.io/labor_stat/research/pharmaccess.html</guid>
+  <pubDate>Fri, 06 Mar 2026 02:47:02 GMT</pubDate>
+  <media:content url="https://youngsampk.github.io/labor_stat/research/images/pharmaccess-momcare-graphic.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>{B4F502887207:/research/sensire.html}</title>
+  <link>https://youngsampk.github.io/labor_stat/research/sensire.html</link>
+  <description>{B4F502887207:/research/sensire.html}</description>
+  <category>english</category>
+  <category>data-centric ai</category>
+  <guid>https://youngsampk.github.io/labor_stat/research/sensire.html</guid>
+  <pubDate>Fri, 06 Mar 2026 02:47:02 GMT</pubDate>
+  <media:content url="https://youngsampk.github.io/labor_stat/research/images/sensire.jpg" medium="image" type="image/jpeg"/>
+</item>
+</channel>
+</rss>
