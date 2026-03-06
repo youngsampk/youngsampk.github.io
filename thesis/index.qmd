@@ -26,6 +26,7 @@ format:
   html:
     toc: true
     toc-depth: 2
+    reference-location: margin   # 각주 마진 오른쪽에 표시
     other-links:
       - text: "PDF 다운로드"
         icon: file-earmark-pdf
