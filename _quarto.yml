@@ -6,6 +6,7 @@ lang: ko
 
 resources: 
   - robots.txt
+  - research/images/   # ← 추가
 
 website:
   title: "Park Youngsam Homepage"
