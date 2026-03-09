@@ -13,7 +13,6 @@ website:
   site-url: "https://youngsampk.github.io/labor_stat/"
   open-graph: true
   description: "노동 경제 사회 통계 정책 고용 노사관계 문제를 다루는 박영삼의 웹페이지"
-  reader-mode: true
   navbar:
     left:
       - text: "News | Column"
@@ -37,11 +36,11 @@ website:
         href: index.xml
       - text: Blogger
         href: http://yspark1968.blogspot.com/
+#########################
 page-footer:
     left: "© Youngsam Park"
 search: true
 rss: true
-#########################
 format:
   html:
     theme: 
