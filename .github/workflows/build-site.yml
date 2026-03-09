@@ -16,15 +16,15 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Quarto
-        uses: quarto-dev/quarto-actions/setup-quarto@v1
+        uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
       - name: Render site with Quarto
-        run: quarto render
+        uses: quarto-dev/quarto-actions/render@v2
 
       - name: Generate sitemap
         run: python scripts/generate_sitemap.py --site-url "${{ env.SITE_URL }}" --input-dir docs --output docs/sitemap.xml
