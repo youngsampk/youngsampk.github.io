@@ -6,7 +6,8 @@ lang: ko
 
 resources: 
   - robots.txt
-  - research/images/   # ← 추가
+  - naver2a063c2d6ae9743ae82dd1391ae9557d.html
+  - research/images/
 
 website:
   title: "Park Youngsam Homepage"
@@ -33,7 +34,7 @@ website:
 #########################
 # You can ignore this part in the first step
       - icon: rss
-        href: index.xml
+        href: feed.xml
       - text: Blogger
         href: http://yspark1968.blogspot.com/
 #########################
