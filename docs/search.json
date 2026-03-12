@@ -908,5 +908,61 @@
     "title": "비임금노동자 현황과 쟁점",
     "section": "각주",
     "text": "각주\n\n\n박영삼. (2024). 가짜 3.3% 계약과 4대보험 미가입 실태분석 및 정책과제. 국회 토론회 자료집, 용혜인·이용우·신장식·한창민 의원실. 2024년 7월 9일.↩︎\n특고나 플랫폼 종사자는 거의 대부분 ‘비과세 원천징수’ 인적용역에 해당되나 두 가지 다른 조건에 있으면 ‘과세대상 비원천징수’ 인적용역이 됨. 첫째, 물적 설비가 일정 정도 갖춰진 경우(건설기계, 화물차, 택배차량, 가전제품설치), 그리고 고객에게 직접 대금을 수령하는 방식(중고차판매원, 캐디, 가사도우미 등)의 경우 원천징수가 적용되지 않음↩︎\n고용보험이 적용되는 19개 직종은 보험설계사, 신용카드회원모집인, 대출모집인, 학습지교사, 방문강사, 택배기사, 대여제품방문점검원, 가전제품배송·설치기사, 방문판매원, 화물차주(수출입컨테이너·시멘트·철강재·위험물질운송기사), 건설기계조종사, 방과후학교 강사(초·중등), 퀵서비스기사, 대리운전기사(플랫폼 이용 노무제공자), 화물차주(택배지․간선기사, 자동차·곡물가루·곡물·사료 운송기사, 유통배송기사), 소프트웨어프리랜서, 관광통역안내사, 어린이통학버스기사, 골프장 캐디 등이 해당. 산재보험은 여기에 건설현장화물차주(살수차, 카고크레인, 고소작업차)가 포함됨.↩︎\n“IRS는 급여 소득자에게 발행되는 W2 양식과 자영업자와 독립계약자의 소득을 나타내는 1099 양식을 전수 조사해 세금보고를 제대로 하지 않은 고액 소득자들을 가려낸 것으로 알려졌다.” 미주 한국일보, 2024년 3월 4일자 보도 “IRS, 세금 보고 안 한 소득자들 잡아 낸다”.↩︎"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html",
+    "href": "docs_sitemap_feed.html",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "GitHub Pages로 배포되는 Quarto 블로그(youngsampk/labor_stat)에 대해, main 브랜치에 push할 때마다 sitemap.xml과 feed.xml(RSS 2.0)을 자동으로 생성·커밋하는 파이프라인을 구성했습니다.\n\n\n\n\n\n\n\n\n\n\n\n파일\n역할\n\n\n\n\nscripts/generate_sitemap.py\ndocs/ 폴더의 HTML 파일을 스캔하여 docs/sitemap.xml 생성\n\n\nscripts/generate_feed.py\ndocs/posts/ 하위 index.html을 스캔하여 docs/feed.xml (RSS 2.0) 생성\n\n\n.github/workflows/build-site.yml\nGitHub Actions 워크플로 — Quarto 렌더 후 위 스크립트 실행, 결과 자동 커밋\n\n\n\n\n\n\n\n\n\n\ndocs/ 디렉터리를 재귀 탐색하여 .html 파일 목록을 수집\n각 파일의 마지막 수정일(mtime)을 &lt;lastmod&gt;로 기록\n결과를 docs/sitemap.xml에 표준 Sitemap XML 형식으로 출력\n\n실행 예시:\npython scripts/generate_sitemap.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs --output docs/sitemap.xml\n\n\n\n\ndocs/posts/ 하위 폴더의 index.html을 탐색\n&lt;title&gt;, &lt;meta name=\"description\"&gt;, 첫 번째 &lt;p&gt; 등에서 제목과 설명을 추출\n파일 수정일 기준으로 최신순 정렬, 최대 N개 항목을 RSS 2.0 형식으로 출력\n결과를 docs/feed.xml에 저장\n\n실행 예시:\npython scripts/generate_feed.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs/posts --output docs/feed.xml --max-items 30\n\n\n\nname: Build site and generate sitemap/feed\n\non:\n  push:\n    branches: [ main ]\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    env:\n      SITE_URL: https://youngsampk.github.io/labor_stat\n    steps:\n      - Checkout (actions/checkout@v4)\n      - Setup Quarto (quarto-dev/quarto-actions/setup@v2)\n      - Setup Python (actions/setup-python@v5)\n      - Render site (quarto-dev/quarto-actions/render@v2)\n      - Generate sitemap (python scripts/generate_sitemap.py ...)\n      - Generate RSS feed (python scripts/generate_feed.py ...)\n      - Commit & push (docs/sitemap.xml, docs/feed.xml)\n동작 흐름: 1. main에 push 이벤트 발생 2. Ubuntu 러너에서 Quarto + Python 환경 세팅 3. quarto render로 사이트 빌드 → docs/ 폴더에 HTML 생성 4. Python 스크립트로 docs/sitemap.xml, docs/feed.xml 생성 5. 변경 사항이 있으면 자동 커밋 및 push\n\n\n\n\n\n\n\n\n\n\n\n\n\n생성 파일\n경로\n접속 URL\n\n\n\n\nSitemap\ndocs/sitemap.xml\nhttps://youngsampk.github.io/labor_stat/sitemap.xml\n\n\nRSS Feed\ndocs/feed.xml\nhttps://youngsampk.github.io/labor_stat/feed.xml\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n커밋\n내용\n\n\n\n\ncddf550\nchore(ci): add sitemap and RSS generation workflow and scripts — 스크립트 2개 + 워크플로 최초 추가\n\n\n3a8e1ca\nfix(ci): set SITE_URL to actual GitHub Pages domain — SITE_URL을 실제 도메인으로 변경\n\n\ndb01ba7\nfix(ci): use correct quarto-actions/setup@v2 and render@v2 — GitHub Actions 오류 수정 (올바른 action 경로·버전 사용)\n\n\n\n\n\n\n\n\nGitHub Actions 탭: https://github.com/youngsampk/labor_stat/actions\n\n“Build site and generate sitemap/feed” 워크플로 실행 상태 확인 (✅ 성공 / ❌ 실패)\n\n생성된 파일 직접 확인:\n\nhttps://youngsampk.github.io/labor_stat/sitemap.xml\nhttps://youngsampk.github.io/labor_stat/feed.xml\n\n로컬 테스트 (선택):\npython scripts/generate_sitemap.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs --output docs/sitemap.xml\npython scripts/generate_feed.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs/posts --output docs/feed.xml\n\n\n\n\n\n\n\n\n\n\n\n\n\n문제\n원인\n해결\n\n\n\n\nActions Run #1~#3 실패\nquarto-dev/quarto-actions/setup-quarto@v1 경로가 존재하지 않음\nquarto-dev/quarto-actions/setup@v2로 변경\n\n\nactions/setup-python@v4 경고\ndeprecated 버전\nactions/setup-python@v5로 업그레이드\n\n\nrun: quarto render 단독 실행\n공식 action 활용이 더 안정적\nquarto-dev/quarto-actions/render@v2로 교체"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#개요",
+    "href": "docs_sitemap_feed.html#개요",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "GitHub Pages로 배포되는 Quarto 블로그(youngsampk/labor_stat)에 대해, main 브랜치에 push할 때마다 sitemap.xml과 feed.xml(RSS 2.0)을 자동으로 생성·커밋하는 파이프라인을 구성했습니다."
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#추가된-파일",
+    "href": "docs_sitemap_feed.html#추가된-파일",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "파일\n역할\n\n\n\n\nscripts/generate_sitemap.py\ndocs/ 폴더의 HTML 파일을 스캔하여 docs/sitemap.xml 생성\n\n\nscripts/generate_feed.py\ndocs/posts/ 하위 index.html을 스캔하여 docs/feed.xml (RSS 2.0) 생성\n\n\n.github/workflows/build-site.yml\nGitHub Actions 워크플로 — Quarto 렌더 후 위 스크립트 실행, 결과 자동 커밋"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#각-파일-상세",
+    "href": "docs_sitemap_feed.html#각-파일-상세",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "docs/ 디렉터리를 재귀 탐색하여 .html 파일 목록을 수집\n각 파일의 마지막 수정일(mtime)을 &lt;lastmod&gt;로 기록\n결과를 docs/sitemap.xml에 표준 Sitemap XML 형식으로 출력\n\n실행 예시:\npython scripts/generate_sitemap.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs --output docs/sitemap.xml\n\n\n\n\ndocs/posts/ 하위 폴더의 index.html을 탐색\n&lt;title&gt;, &lt;meta name=\"description\"&gt;, 첫 번째 &lt;p&gt; 등에서 제목과 설명을 추출\n파일 수정일 기준으로 최신순 정렬, 최대 N개 항목을 RSS 2.0 형식으로 출력\n결과를 docs/feed.xml에 저장\n\n실행 예시:\npython scripts/generate_feed.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs/posts --output docs/feed.xml --max-items 30\n\n\n\nname: Build site and generate sitemap/feed\n\non:\n  push:\n    branches: [ main ]\n\njobs:\n  build:\n    runs-on: ubuntu-latest\n    env:\n      SITE_URL: https://youngsampk.github.io/labor_stat\n    steps:\n      - Checkout (actions/checkout@v4)\n      - Setup Quarto (quarto-dev/quarto-actions/setup@v2)\n      - Setup Python (actions/setup-python@v5)\n      - Render site (quarto-dev/quarto-actions/render@v2)\n      - Generate sitemap (python scripts/generate_sitemap.py ...)\n      - Generate RSS feed (python scripts/generate_feed.py ...)\n      - Commit & push (docs/sitemap.xml, docs/feed.xml)\n동작 흐름: 1. main에 push 이벤트 발생 2. Ubuntu 러너에서 Quarto + Python 환경 세팅 3. quarto render로 사이트 빌드 → docs/ 폴더에 HTML 생성 4. Python 스크립트로 docs/sitemap.xml, docs/feed.xml 생성 5. 변경 사항이 있으면 자동 커밋 및 push"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#생성-파일-위치",
+    "href": "docs_sitemap_feed.html#생성-파일-위치",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "생성 파일\n경로\n접속 URL\n\n\n\n\nSitemap\ndocs/sitemap.xml\nhttps://youngsampk.github.io/labor_stat/sitemap.xml\n\n\nRSS Feed\ndocs/feed.xml\nhttps://youngsampk.github.io/labor_stat/feed.xml"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#수행한-커밋-이력",
+    "href": "docs_sitemap_feed.html#수행한-커밋-이력",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "커밋\n내용\n\n\n\n\ncddf550\nchore(ci): add sitemap and RSS generation workflow and scripts — 스크립트 2개 + 워크플로 최초 추가\n\n\n3a8e1ca\nfix(ci): set SITE_URL to actual GitHub Pages domain — SITE_URL을 실제 도메인으로 변경\n\n\ndb01ba7\nfix(ci): use correct quarto-actions/setup@v2 and render@v2 — GitHub Actions 오류 수정 (올바른 action 경로·버전 사용)"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#확인-방법",
+    "href": "docs_sitemap_feed.html#확인-방법",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "GitHub Actions 탭: https://github.com/youngsampk/labor_stat/actions\n\n“Build site and generate sitemap/feed” 워크플로 실행 상태 확인 (✅ 성공 / ❌ 실패)\n\n생성된 파일 직접 확인:\n\nhttps://youngsampk.github.io/labor_stat/sitemap.xml\nhttps://youngsampk.github.io/labor_stat/feed.xml\n\n로컬 테스트 (선택):\npython scripts/generate_sitemap.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs --output docs/sitemap.xml\npython scripts/generate_feed.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs/posts --output docs/feed.xml"
+  },
+  {
+    "objectID": "docs_sitemap_feed.html#트러블슈팅-기록",
+    "href": "docs_sitemap_feed.html#트러블슈팅-기록",
+    "title": "sitemap.xml / feed.xml 자동 생성 작업 정리",
+    "section": "",
+    "text": "문제\n원인\n해결\n\n\n\n\nActions Run #1~#3 실패\nquarto-dev/quarto-actions/setup-quarto@v1 경로가 존재하지 않음\nquarto-dev/quarto-actions/setup@v2로 변경\n\n\nactions/setup-python@v4 경고\ndeprecated 버전\nactions/setup-python@v5로 업그레이드\n\n\nrun: quarto render 단독 실행\n공식 action 활용이 더 안정적\nquarto-dev/quarto-actions/render@v2로 교체"
   }
 ]
