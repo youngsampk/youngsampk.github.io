@@ -1,45 +1,45 @@
-# sitemap.xml / feed.xml 자동 생성 작업 정리
+﻿# sitemap.xml / feed.xml ?먮룞 ?앹꽦 ?묒뾽 ?뺣━
 
-## 1. 개요
+## 1. 媛쒖슂
 
-GitHub Pages로 배포되는 Quarto 블로그(`youngsampk/labor_stat`)에 대해,
-`main` 브랜치에 push할 때마다 **sitemap.xml**과 **feed.xml(RSS 2.0)**을 자동으로 생성·커밋하는 파이프라인을 구성했습니다.
+GitHub Pages濡?諛고룷?섎뒗 Quarto 釉붾줈洹?`youngsampk/labor_stat`)?????
+`main` 釉뚮옖移섏뿉 push???뚮쭏??**sitemap.xml**怨?**feed.xml(RSS 2.0)**???먮룞?쇰줈 ?앹꽦쨌而ㅻ컠?섎뒗 ?뚯씠?꾨씪?몄쓣 援ъ꽦?덉뒿?덈떎.
 
 ---
 
-## 2. 추가된 파일
+## 2. 異붽????뚯씪
 
-| 파일 | 역할 |
+| ?뚯씪 | ??븷 |
 |---|---|
-| `scripts/generate_sitemap.py` | `docs/` 폴더의 HTML 파일을 스캔하여 `docs/sitemap.xml` 생성 |
-| `scripts/generate_feed.py` | `docs/posts/` 하위 `index.html`을 스캔하여 `docs/feed.xml` (RSS 2.0) 생성 |
-| `.github/workflows/build-site.yml` | GitHub Actions 워크플로 — Quarto 렌더 후 위 스크립트 실행, 결과 자동 커밋 |
+| `scripts/generate_sitemap.py` | `docs/` ?대뜑??HTML ?뚯씪???ㅼ틪?섏뿬 `docs/sitemap.xml` ?앹꽦 |
+| `scripts/generate_feed.py` | `docs/posts/` ?섏쐞 `index.html`???ㅼ틪?섏뿬 `docs/feed.xml` (RSS 2.0) ?앹꽦 |
+| `.github/workflows/build-site.yml` | GitHub Actions ?뚰겕?뚮줈 ??Quarto ?뚮뜑 ?????ㅽ겕由쏀듃 ?ㅽ뻾, 寃곌낵 ?먮룞 而ㅻ컠 |
 
 ---
 
-## 3. 각 파일 상세
+## 3. 媛??뚯씪 ?곸꽭
 
 ### 3.1 `scripts/generate_sitemap.py`
 
-- `docs/` 디렉터리를 재귀 탐색하여 `.html` 파일 목록을 수집
-- 각 파일의 마지막 수정일(`mtime`)을 `<lastmod>`로 기록
-- 결과를 `docs/sitemap.xml`에 표준 Sitemap XML 형식으로 출력
+- `docs/` ?붾젆?곕━瑜??ш? ?먯깋?섏뿬 `.html` ?뚯씪 紐⑸줉???섏쭛
+- 媛??뚯씪??留덉?留??섏젙??`mtime`)??`<lastmod>`濡?湲곕줉
+- 寃곌낵瑜?`docs/sitemap.xml`???쒖? Sitemap XML ?뺤떇?쇰줈 異쒕젰
 
-**실행 예시:**
+**?ㅽ뻾 ?덉떆:**
 ```powershell
-python scripts/generate_sitemap.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs --output docs/sitemap.xml
+python scripts/generate_sitemap.py --site-url https://youngsampk.github.io --input-dir docs --output docs/sitemap.xml
 ```
 
 ### 3.2 `scripts/generate_feed.py`
 
-- `docs/posts/` 하위 폴더의 `index.html`을 탐색
-- `<title>`, `<meta name="description">`, 첫 번째 `<p>` 등에서 제목과 설명을 추출
-- 파일 수정일 기준으로 최신순 정렬, 최대 N개 항목을 RSS 2.0 형식으로 출력
-- 결과를 `docs/feed.xml`에 저장
+- `docs/posts/` ?섏쐞 ?대뜑??`index.html`???먯깋
+- `<title>`, `<meta name="description">`, 泥?踰덉㎏ `<p>` ?깆뿉???쒕ぉ怨??ㅻ챸??異붿텧
+- ?뚯씪 ?섏젙??湲곗??쇰줈 理쒖떊???뺣젹, 理쒕? N媛???ぉ??RSS 2.0 ?뺤떇?쇰줈 異쒕젰
+- 寃곌낵瑜?`docs/feed.xml`?????
 
-**실행 예시:**
+**?ㅽ뻾 ?덉떆:**
 ```powershell
-python scripts/generate_feed.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs/posts --output docs/feed.xml --max-items 30
+python scripts/generate_feed.py --site-url https://youngsampk.github.io --input-dir docs/posts --output docs/feed.xml --max-items 30
 ```
 
 ### 3.3 `.github/workflows/build-site.yml`
@@ -55,7 +55,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      SITE_URL: https://youngsampk.github.io/labor_stat
+      SITE_URL: https://youngsampk.github.io
     steps:
       - Checkout (actions/checkout@v4)
       - Setup Quarto (quarto-dev/quarto-actions/setup@v2)
@@ -66,53 +66,54 @@ jobs:
       - Commit & push (docs/sitemap.xml, docs/feed.xml)
 ```
 
-**동작 흐름:**
-1. `main`에 push 이벤트 발생
-2. Ubuntu 러너에서 Quarto + Python 환경 세팅
-3. `quarto render`로 사이트 빌드 → `docs/` 폴더에 HTML 생성
-4. Python 스크립트로 `docs/sitemap.xml`, `docs/feed.xml` 생성
-5. 변경 사항이 있으면 자동 커밋 및 push
+**?숈옉 ?먮쫫:**
+1. `main`??push ?대깽??諛쒖깮
+2. Ubuntu ?щ꼫?먯꽌 Quarto + Python ?섍꼍 ?명똿
+3. `quarto render`濡??ъ씠??鍮뚮뱶 ??`docs/` ?대뜑??HTML ?앹꽦
+4. Python ?ㅽ겕由쏀듃濡?`docs/sitemap.xml`, `docs/feed.xml` ?앹꽦
+5. 蹂寃??ы빆???덉쑝硫??먮룞 而ㅻ컠 諛?push
 
 ---
 
-## 4. 생성 파일 위치
+## 4. ?앹꽦 ?뚯씪 ?꾩튂
 
-| 생성 파일 | 경로 | 접속 URL |
+| ?앹꽦 ?뚯씪 | 寃쎈줈 | ?묒냽 URL |
 |---|---|---|
-| Sitemap | `docs/sitemap.xml` | https://youngsampk.github.io/labor_stat/sitemap.xml |
-| RSS Feed | `docs/feed.xml` | https://youngsampk.github.io/labor_stat/feed.xml |
+| Sitemap | `docs/sitemap.xml` | https://youngsampk.github.io/sitemap.xml |
+| RSS Feed | `docs/feed.xml` | https://youngsampk.github.io/feed.xml |
 
 ---
 
-## 5. 수행한 커밋 이력
+## 5. ?섑뻾??而ㅻ컠 ?대젰
 
-| 커밋 | 내용 |
+| 而ㅻ컠 | ?댁슜 |
 |---|---|
-| `cddf550` | `chore(ci): add sitemap and RSS generation workflow and scripts` — 스크립트 2개 + 워크플로 최초 추가 |
-| `3a8e1ca` | `fix(ci): set SITE_URL to actual GitHub Pages domain` — SITE_URL을 실제 도메인으로 변경 |
-| `db01ba7` | `fix(ci): use correct quarto-actions/setup@v2 and render@v2` — GitHub Actions 오류 수정 (올바른 action 경로·버전 사용) |
+| `cddf550` | `chore(ci): add sitemap and RSS generation workflow and scripts` ???ㅽ겕由쏀듃 2媛?+ ?뚰겕?뚮줈 理쒖큹 異붽? |
+| `3a8e1ca` | `fix(ci): set SITE_URL to actual GitHub Pages domain` ??SITE_URL???ㅼ젣 ?꾨찓?몄쑝濡?蹂寃?|
+| `db01ba7` | `fix(ci): use correct quarto-actions/setup@v2 and render@v2` ??GitHub Actions ?ㅻ쪟 ?섏젙 (?щ컮瑜?action 寃쎈줈쨌踰꾩쟾 ?ъ슜) |
 
 ---
 
-## 6. 확인 방법
+## 6. ?뺤씤 諛⑸쾿
 
-1. **GitHub Actions 탭**: https://github.com/youngsampk/labor_stat/actions
-   - "Build site and generate sitemap/feed" 워크플로 실행 상태 확인 (✅ 성공 / ❌ 실패)
-2. **생성된 파일 직접 확인**:
-   - https://youngsampk.github.io/labor_stat/sitemap.xml
-   - https://youngsampk.github.io/labor_stat/feed.xml
-3. **로컬 테스트** (선택):
+1. **GitHub Actions ??*: https://github.com/youngsampk/labor_stat/actions
+   - "Build site and generate sitemap/feed" ?뚰겕?뚮줈 ?ㅽ뻾 ?곹깭 ?뺤씤 (???깃났 / ???ㅽ뙣)
+2. **?앹꽦???뚯씪 吏곸젒 ?뺤씤**:
+   - https://youngsampk.github.io/sitemap.xml
+   - https://youngsampk.github.io/feed.xml
+3. **濡쒖뺄 ?뚯뒪??* (?좏깮):
    ```powershell
-   python scripts/generate_sitemap.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs --output docs/sitemap.xml
-   python scripts/generate_feed.py --site-url https://youngsampk.github.io/labor_stat --input-dir docs/posts --output docs/feed.xml
+   python scripts/generate_sitemap.py --site-url https://youngsampk.github.io --input-dir docs --output docs/sitemap.xml
+   python scripts/generate_feed.py --site-url https://youngsampk.github.io --input-dir docs/posts --output docs/feed.xml
    ```
 
 ---
 
-## 7. 트러블슈팅 기록
+## 7. ?몃윭釉붿뒋??湲곕줉
 
-| 문제 | 원인 | 해결 |
+| 臾몄젣 | ?먯씤 | ?닿껐 |
 |---|---|---|
-| Actions Run #1~#3 실패 | `quarto-dev/quarto-actions/setup-quarto@v1` 경로가 존재하지 않음 | `quarto-dev/quarto-actions/setup@v2`로 변경 |
-| `actions/setup-python@v4` 경고 | deprecated 버전 | `actions/setup-python@v5`로 업그레이드 |
-| `run: quarto render` 단독 실행 | 공식 action 활용이 더 안정적 | `quarto-dev/quarto-actions/render@v2`로 교체 |
+| Actions Run #1~#3 ?ㅽ뙣 | `quarto-dev/quarto-actions/setup-quarto@v1` 寃쎈줈媛 議댁옱?섏? ?딆쓬 | `quarto-dev/quarto-actions/setup@v2`濡?蹂寃?|
+| `actions/setup-python@v4` 寃쎄퀬 | deprecated 踰꾩쟾 | `actions/setup-python@v5`濡??낃렇?덉씠??|
+| `run: quarto render` ?⑤룆 ?ㅽ뻾 | 怨듭떇 action ?쒖슜?????덉젙??| `quarto-dev/quarto-actions/render@v2`濡?援먯껜 |
+

@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      SITE_URL: https://youngsampk.github.io/labor_stat
+      SITE_URL: https://youngsampk.github.io
     steps:
       - name: Checkout
         uses: actions/checkout@v4
