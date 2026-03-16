@@ -1,7 +1,6 @@
 # robots.txt for https://youngsampk.github.io/
 User-agent: *
 Allow: /
-Crawl-delay: 10
 
 # Sitemap
 Sitemap: https://youngsampk.github.io/sitemap.xml
