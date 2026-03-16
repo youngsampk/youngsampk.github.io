@@ -118,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
   "alternateName": "박영삼 노동통계 홈페이지",
 
-  "url": "https://youngsampk.github.io/labor_stat/",
+  "url": "https://youngsampk.github.io/",
 
   "description": "노동 경제 사회 통계 정책 고용 노사관계 문제를 다루는 박영삼의 웹페이지",
 
@@ -132,7 +132,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     "alternateName": "박영삼",
 
-    "url": "https://youngsampk.github.io/labor_stat/about.html"
+    "url": "https://youngsampk.github.io/about.html"
 
   },
 
@@ -148,7 +148,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
     "@type": "SearchAction",
 
-    "target": "https://youngsampk.github.io/labor_stat/?q={search_term_string}",
+    "target": "https://youngsampk.github.io/?q={search_term_string}",
 
     "query-input": "required name=search_term_string"
 
@@ -176,7 +176,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
       "name": "Home",
 
-      "item": "https://youngsampk.github.io/labor_stat/"
+      "item": "https://youngsampk.github.io/"
 
     },
 
@@ -188,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
       "name": "News | Column",
 
-      "item": "https://youngsampk.github.io/labor_stat/index.html"
+      "item": "https://youngsampk.github.io/index.html"
 
     },
 
@@ -200,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
       "name": "Research",
 
-      "item": "https://youngsampk.github.io/labor_stat/research/index.html"
+      "item": "https://youngsampk.github.io/research/index.html"
 
     },
 
@@ -212,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
       "name": "PhD Thesis",
 
-      "item": "https://youngsampk.github.io/labor_stat/thesis/index.html"
+      "item": "https://youngsampk.github.io/thesis/index.html"
 
     }
 
@@ -278,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="./feed.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -304,15 +304,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="sitemap.xml-feed.xml-자동-생성-작업-정리" class="level1">
-<h1>sitemap.xml / feed.xml 자동 생성 작업 정리</h1>
-<section id="개요" class="level2">
-<h2 class="anchored" data-anchor-id="개요">1. 개요</h2>
-<p>GitHub Pages로 배포되는 Quarto 블로그(<code>youngsampk/labor_stat</code>)에 대해, <code>main</code> 브랜치에 push할 때마다 <strong>sitemap.xml</strong>과 <strong>feed.xml(RSS 2.0)</strong>을 자동으로 생성·커밋하는 파이프라인을 구성했습니다.</p>
+<section id="sitemap.xml-feed.xml-먮룞-앹꽦-묒뾽-뺣" class="level1">
+<h1>sitemap.xml / feed.xml ?먮룞 ?앹꽦 ?묒뾽 ?뺣━</h1>
+<section id="媛쒖슂" class="level2">
+<h2 class="anchored" data-anchor-id="媛쒖슂">1. 媛쒖슂</h2>
+<p>GitHub Pages濡?諛고룷?섎뒗 Quarto 釉붾줈洹?<code>youngsampk/labor_stat</code>)????? <code>main</code> 釉뚮옖移섏뿉 push???뚮쭏??<strong>sitemap.xml</strong>怨?<strong>feed.xml(RSS 2.0)</strong>???먮룞?쇰줈 ?앹꽦쨌而ㅻ컠?섎뒗 ?뚯씠?꾨씪?몄쓣 援ъ꽦?덉뒿?덈떎.</p>
 <hr>
 </section>
-<section id="추가된-파일" class="level2">
-<h2 class="anchored" data-anchor-id="추가된-파일">2. 추가된 파일</h2>
+<section id="異붽뚯씪" class="level2">
+<h2 class="anchored" data-anchor-id="異붽뚯씪">2. 異붽????뚯씪</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -320,49 +320,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </colgroup>
 <thead>
 <tr class="header">
-<th>파일</th>
-<th>역할</th>
+<th>?뚯씪</th>
+<th>??븷</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>scripts/generate_sitemap.py</code></td>
-<td><code>docs/</code> 폴더의 HTML 파일을 스캔하여 <code>docs/sitemap.xml</code> 생성</td>
+<td><code>docs/</code> ?대뜑??HTML ?뚯씪???ㅼ틪?섏뿬 <code>docs/sitemap.xml</code> ?앹꽦</td>
 </tr>
 <tr class="even">
 <td><code>scripts/generate_feed.py</code></td>
-<td><code>docs/posts/</code> 하위 <code>index.html</code>을 스캔하여 <code>docs/feed.xml</code> (RSS 2.0) 생성</td>
+<td><code>docs/posts/</code> ?섏쐞 <code>index.html</code>???ㅼ틪?섏뿬 <code>docs/feed.xml</code> (RSS 2.0) ?앹꽦</td>
 </tr>
 <tr class="odd">
 <td><code>.github/workflows/build-site.yml</code></td>
-<td>GitHub Actions 워크플로 — Quarto 렌더 후 위 스크립트 실행, 결과 자동 커밋</td>
+<td>GitHub Actions ?뚰겕?뚮줈 ??Quarto ?뚮뜑 ?????ㅽ겕由쏀듃 ?ㅽ뻾, 寃곌낵 ?먮룞 而ㅻ컠</td>
 </tr>
 </tbody>
 </table>
 <hr>
 </section>
-<section id="각-파일-상세" class="level2">
-<h2 class="anchored" data-anchor-id="각-파일-상세">3. 각 파일 상세</h2>
+<section id="媛뚯씪-곸꽭" class="level2">
+<h2 class="anchored" data-anchor-id="媛뚯씪-곸꽭">3. 媛??뚯씪 ?곸꽭</h2>
 <section id="scriptsgenerate_sitemap.py" class="level3">
 <h3 class="anchored" data-anchor-id="scriptsgenerate_sitemap.py">3.1 <code>scripts/generate_sitemap.py</code></h3>
 <ul>
-<li><code>docs/</code> 디렉터리를 재귀 탐색하여 <code>.html</code> 파일 목록을 수집</li>
-<li>각 파일의 마지막 수정일(<code>mtime</code>)을 <code>&lt;lastmod&gt;</code>로 기록</li>
-<li>결과를 <code>docs/sitemap.xml</code>에 표준 Sitemap XML 형식으로 출력</li>
+<li><code>docs/</code> ?붾젆?곕━瑜??ш? ?먯깋?섏뿬 <code>.html</code> ?뚯씪 紐⑸줉???섏쭛</li>
+<li>媛??뚯씪??留덉?留??섏젙??<code>mtime</code>)??<code>&lt;lastmod&gt;</code>濡?湲곕줉</li>
+<li>寃곌낵瑜?<code>docs/sitemap.xml</code>???쒖? Sitemap XML ?뺤떇?쇰줈 異쒕젰</li>
 </ul>
-<p><strong>실행 예시:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_sitemap<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span><span class="op">/</span>labor_stat <span class="op">--</span>input-dir docs <span class="op">--</span>output docs<span class="op">/</span>sitemap<span class="op">.</span><span class="fu">xml</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>?ㅽ뻾 ?덉떆:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_sitemap<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span> <span class="op">--</span>input-dir docs <span class="op">--</span>output docs<span class="op">/</span>sitemap<span class="op">.</span><span class="fu">xml</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="scriptsgenerate_feed.py" class="level3">
 <h3 class="anchored" data-anchor-id="scriptsgenerate_feed.py">3.2 <code>scripts/generate_feed.py</code></h3>
 <ul>
-<li><code>docs/posts/</code> 하위 폴더의 <code>index.html</code>을 탐색</li>
-<li><code>&lt;title&gt;</code>, <code>&lt;meta name="description"&gt;</code>, 첫 번째 <code>&lt;p&gt;</code> 등에서 제목과 설명을 추출</li>
-<li>파일 수정일 기준으로 최신순 정렬, 최대 N개 항목을 RSS 2.0 형식으로 출력</li>
-<li>결과를 <code>docs/feed.xml</code>에 저장</li>
+<li><code>docs/posts/</code> ?섏쐞 ?대뜑??<code>index.html</code>???먯깋</li>
+<li><code>&lt;title&gt;</code>, <code>&lt;meta name="description"&gt;</code>, 泥?踰덉㎏ <code>&lt;p&gt;</code> ?깆뿉???쒕ぉ怨??ㅻ챸??異붿텧</li>
+<li>?뚯씪 ?섏젙??湲곗??쇰줈 理쒖떊???뺣젹, 理쒕? N媛???ぉ??RSS 2.0 ?뺤떇?쇰줈 異쒕젰</li>
+<li>寃곌낵瑜?<code>docs/feed.xml</code>?????</li>
 </ul>
-<p><strong>실행 예시:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_feed<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span><span class="op">/</span>labor_stat <span class="op">--</span>input-dir docs<span class="op">/</span>posts <span class="op">--</span>output docs<span class="op">/</span>feed<span class="op">.</span><span class="fu">xml</span> <span class="op">--</span>max-items <span class="dv">30</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>?ㅽ뻾 ?덉떆:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_feed<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span> <span class="op">--</span>input-dir docs<span class="op">/</span>posts <span class="op">--</span>output docs<span class="op">/</span>feed<span class="op">.</span><span class="fu">xml</span> <span class="op">--</span>max-items <span class="dv">30</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="githubworkflowsbuild-site.yml" class="level3">
 <h3 class="anchored" data-anchor-id="githubworkflowsbuild-site.yml">3.3 <code>.github/workflows/build-site.yml</code></h3>
@@ -376,7 +376,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build</span><span class="kw">:</span></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">env</span><span class="kw">:</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">SITE_URL</span><span class="kw">:</span><span class="at"> https://youngsampk.github.io/labor_stat</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">SITE_URL</span><span class="kw">:</span><span class="at"> https://youngsampk.github.io</span></span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> Checkout (actions/checkout@v4)</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> Setup Quarto (quarto-dev/quarto-actions/setup@v2)</span></span>
@@ -385,12 +385,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> Generate sitemap (python scripts/generate_sitemap.py ...)</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> Generate RSS feed (python scripts/generate_feed.py ...)</span></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> Commit &amp; push (docs/sitemap.xml, docs/feed.xml)</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>동작 흐름:</strong> 1. <code>main</code>에 push 이벤트 발생 2. Ubuntu 러너에서 Quarto + Python 환경 세팅 3. <code>quarto render</code>로 사이트 빌드 → <code>docs/</code> 폴더에 HTML 생성 4. Python 스크립트로 <code>docs/sitemap.xml</code>, <code>docs/feed.xml</code> 생성 5. 변경 사항이 있으면 자동 커밋 및 push</p>
+<p><strong>?숈옉 ?먮쫫:</strong> 1. <code>main</code>??push ?대깽??諛쒖깮 2. Ubuntu ?щ꼫?먯꽌 Quarto + Python ?섍꼍 ?명똿 3. <code>quarto render</code>濡??ъ씠??鍮뚮뱶 ??<code>docs/</code> ?대뜑??HTML ?앹꽦 4. Python ?ㅽ겕由쏀듃濡?<code>docs/sitemap.xml</code>, <code>docs/feed.xml</code> ?앹꽦 5. 蹂寃??ы빆???덉쑝硫??먮룞 而ㅻ컠 諛?push</p>
 <hr>
 </section>
 </section>
-<section id="생성-파일-위치" class="level2">
-<h2 class="anchored" data-anchor-id="생성-파일-위치">4. 생성 파일 위치</h2>
+<section id="앹꽦-뚯씪-꾩튂" class="level2">
+<h2 class="anchored" data-anchor-id="앹꽦-뚯씪-꾩튂">4. ?앹꽦 ?뚯씪 ?꾩튂</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -399,28 +399,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </colgroup>
 <thead>
 <tr class="header">
-<th>생성 파일</th>
-<th>경로</th>
-<th>접속 URL</th>
+<th>?앹꽦 ?뚯씪</th>
+<th>寃쎈줈</th>
+<th>?묒냽 URL</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Sitemap</td>
 <td><code>docs/sitemap.xml</code></td>
-<td>https://youngsampk.github.io/labor_stat/sitemap.xml</td>
+<td>https://youngsampk.github.io/sitemap.xml</td>
 </tr>
 <tr class="even">
 <td>RSS Feed</td>
 <td><code>docs/feed.xml</code></td>
-<td>https://youngsampk.github.io/labor_stat/feed.xml</td>
+<td>https://youngsampk.github.io/feed.xml</td>
 </tr>
 </tbody>
 </table>
 <hr>
 </section>
-<section id="수행한-커밋-이력" class="level2">
-<h2 class="anchored" data-anchor-id="수행한-커밋-이력">5. 수행한 커밋 이력</h2>
+<section id="섑뻾而ㅻ컠-대젰" class="level2">
+<h2 class="anchored" data-anchor-id="섑뻾而ㅻ컠-대젰">5. ?섑뻾??而ㅻ컠 ?대젰</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -428,47 +428,47 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </colgroup>
 <thead>
 <tr class="header">
-<th>커밋</th>
-<th>내용</th>
+<th>而ㅻ컠</th>
+<th>?댁슜</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><code>cddf550</code></td>
-<td><code>chore(ci): add sitemap and RSS generation workflow and scripts</code> — 스크립트 2개 + 워크플로 최초 추가</td>
+<td><code>chore(ci): add sitemap and RSS generation workflow and scripts</code> ???ㅽ겕由쏀듃 2媛?+ ?뚰겕?뚮줈 理쒖큹 異붽?</td>
 </tr>
 <tr class="even">
 <td><code>3a8e1ca</code></td>
-<td><code>fix(ci): set SITE_URL to actual GitHub Pages domain</code> — SITE_URL을 실제 도메인으로 변경</td>
+<td><code>fix(ci): set SITE_URL to actual GitHub Pages domain</code> ??SITE_URL???ㅼ젣 ?꾨찓?몄쑝濡?蹂寃?</td>
 </tr>
 <tr class="odd">
 <td><code>db01ba7</code></td>
-<td><code>fix(ci): use correct quarto-actions/setup@v2 and render@v2</code> — GitHub Actions 오류 수정 (올바른 action 경로·버전 사용)</td>
+<td><code>fix(ci): use correct quarto-actions/setup@v2 and render@v2</code> ??GitHub Actions ?ㅻ쪟 ?섏젙 (?щ컮瑜?action 寃쎈줈쨌踰꾩쟾 ?ъ슜)</td>
 </tr>
 </tbody>
 </table>
 <hr>
 </section>
-<section id="확인-방법" class="level2">
-<h2 class="anchored" data-anchor-id="확인-방법">6. 확인 방법</h2>
+<section id="뺤씤-諛⑸쾿" class="level2">
+<h2 class="anchored" data-anchor-id="뺤씤-諛⑸쾿">6. ?뺤씤 諛⑸쾿</h2>
 <ol type="1">
-<li><p><strong>GitHub Actions 탭</strong>: https://github.com/youngsampk/labor_stat/actions</p>
+<li><p>**GitHub Actions ??*: https://github.com/youngsampk/labor_stat/actions</p>
 <ul>
-<li>“Build site and generate sitemap/feed” 워크플로 실행 상태 확인 (✅ 성공 / ❌ 실패)</li>
+<li>“Build site and generate sitemap/feed” ?뚰겕?뚮줈 ?ㅽ뻾 ?곹깭 ?뺤씤 (???깃났 / ???ㅽ뙣)</li>
 </ul></li>
-<li><p><strong>생성된 파일 직접 확인</strong>:</p>
+<li><p><strong>?앹꽦???뚯씪 吏곸젒 ?뺤씤</strong>:</p>
 <ul>
-<li>https://youngsampk.github.io/labor_stat/sitemap.xml</li>
-<li>https://youngsampk.github.io/labor_stat/feed.xml</li>
+<li>https://youngsampk.github.io/sitemap.xml</li>
+<li>https://youngsampk.github.io/feed.xml</li>
 </ul></li>
-<li><p><strong>로컬 테스트</strong> (선택):</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_sitemap<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span><span class="op">/</span>labor_stat <span class="op">--</span>input-dir docs <span class="op">--</span>output docs<span class="op">/</span>sitemap<span class="op">.</span><span class="fu">xml</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_feed<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span><span class="op">/</span>labor_stat <span class="op">--</span>input-dir docs<span class="op">/</span>posts <span class="op">--</span>output docs<span class="op">/</span>feed<span class="op">.</span><span class="fu">xml</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>**濡쒖뺄 ?뚯뒪??* (?좏깮):</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_sitemap<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span> <span class="op">--</span>input-dir docs <span class="op">--</span>output docs<span class="op">/</span>sitemap<span class="op">.</span><span class="fu">xml</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>python scripts<span class="op">/</span>generate_feed<span class="op">.</span><span class="fu">py</span> <span class="op">--</span>site-url https<span class="op">://</span>youngsampk<span class="op">.</span><span class="fu">github</span><span class="op">.</span><span class="fu">io</span> <span class="op">--</span>input-dir docs<span class="op">/</span>posts <span class="op">--</span>output docs<span class="op">/</span>feed<span class="op">.</span><span class="fu">xml</span></span></code><button title="클립보드 복사" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ol>
 <hr>
 </section>
-<section id="트러블슈팅-기록" class="level2">
-<h2 class="anchored" data-anchor-id="트러블슈팅-기록">7. 트러블슈팅 기록</h2>
+<section id="몃윭釉붿뒋湲곕줉" class="level2">
+<h2 class="anchored" data-anchor-id="몃윭釉붿뒋湲곕줉">7. ?몃윭釉붿뒋??湲곕줉</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -477,26 +477,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </colgroup>
 <thead>
 <tr class="header">
-<th>문제</th>
-<th>원인</th>
-<th>해결</th>
+<th>臾몄젣</th>
+<th>?먯씤</th>
+<th>?닿껐</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Actions Run #1~#3 실패</td>
-<td><code>quarto-dev/quarto-actions/setup-quarto@v1</code> 경로가 존재하지 않음</td>
-<td><code>quarto-dev/quarto-actions/setup@v2</code>로 변경</td>
+<td>Actions Run #1~#3 ?ㅽ뙣</td>
+<td><code>quarto-dev/quarto-actions/setup-quarto@v1</code> 寃쎈줈媛 議댁옱?섏? ?딆쓬</td>
+<td><code>quarto-dev/quarto-actions/setup@v2</code>濡?蹂寃?</td>
 </tr>
 <tr class="even">
-<td><code>actions/setup-python@v4</code> 경고</td>
-<td>deprecated 버전</td>
-<td><code>actions/setup-python@v5</code>로 업그레이드</td>
+<td><code>actions/setup-python@v4</code> 寃쎄퀬</td>
+<td>deprecated 踰꾩쟾</td>
+<td><code>actions/setup-python@v5</code>濡??낃렇?덉씠??</td>
 </tr>
 <tr class="odd">
-<td><code>run: quarto render</code> 단독 실행</td>
-<td>공식 action 활용이 더 안정적</td>
-<td><code>quarto-dev/quarto-actions/render@v2</code>로 교체</td>
+<td><code>run: quarto render</code> ?⑤룆 ?ㅽ뻾</td>
+<td>怨듭떇 action ?쒖슜?????덉젙??</td>
+<td><code>quarto-dev/quarto-actions/render@v2</code>濡?援먯껜</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +613,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/youngsampk\.github\.io\/labor_stat\/");
+      var filterRegex = new RegExp("https:\/\/youngsampk\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
