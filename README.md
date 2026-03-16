@@ -1,2 +1,3 @@
-# labor_stat
-practice quarto and statistic analysis
+# 박영삼의 홈페이지
+
+노동 경제 사회 통계 정책 고용 노사관계 문제를 다루는 박영삼의 웹페이지

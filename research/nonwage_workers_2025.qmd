@@ -16,7 +16,7 @@ format:
     embed-resources: true
     logo: images/logo_2.png
 #    logo: logo-korea-university-square.png
-    footer: "[https://youngsampk.github.io/labor_stat/](https://youngsampk.github.io/labor_stat)"
+    footer: "[https://youngsampk.github.io](https://youngsampk.github.io)"
     css: lecture2.css
 bibliography: refer_nonwage.bib
 nocite: |
