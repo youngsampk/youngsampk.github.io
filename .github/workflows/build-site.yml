@@ -29,6 +29,15 @@ jobs:
       - name: Render site with Quarto
         uses: quarto-dev/quarto-actions/render@v2
 
+      - name: Restore thesis.pdf after Quarto render
+        run: |
+          if [ -f thesis/thesis.pdf ]; then
+            cp thesis/thesis.pdf docs/thesis/thesis.pdf
+            echo "thesis.pdf copied to docs/thesis/"
+          else
+            echo "WARNING: thesis/thesis.pdf not found in source"
+          fi
+
       - name: Generate sitemap
         run: python scripts/generate_sitemap.py --site-url "${{ env.SITE_URL }}" --input-dir docs --output docs/sitemap.xml
 
