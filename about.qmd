@@ -1,7 +1,7 @@
 ---
 title: "Park, Youngsam"
 description: "박영삼(Park Youngsam) 소개 - 노동 경제 사회 통계 연구"
-image: yspark.png
+image: images/yspark.png
 about:
   template: jolla
   links:
