@@ -7,7 +7,7 @@ about:
   links:
     - icon: facebook
       text: Facebook
-      href: https://twitter.com
+      href: https://facebook.com
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com
