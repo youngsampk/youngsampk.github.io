@@ -10,7 +10,7 @@
 <atom:link href="https://youngsampk.github.io/research/index.xml" rel="self" type="application/rss+xml"/>
 <description>박영삼의 연구 자료 모음 - 노동 경제 통계 분석</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Fri, 20 Mar 2026 02:26:21 GMT</lastBuildDate>
+<lastBuildDate>Fri, 20 Mar 2026 12:32:07 GMT</lastBuildDate>
 <item>
   <title>My Tomorrows Trial Search AI</title>
   <link>https://youngsampk.github.io/research/mytomorrows.html</link>
@@ -30,7 +30,7 @@
   <category>applied AI</category>
   <category>mentoring</category>
   <guid>https://youngsampk.github.io/research/mytomorrows.html</guid>
-  <pubDate>Fri, 20 Mar 2026 02:26:21 GMT</pubDate>
+  <pubDate>Fri, 20 Mar 2026 12:32:07 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/research/images/mytomorrows.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 <item>
@@ -42,7 +42,7 @@
   <category>인적용역</category>
   <category>비임금노동</category>
   <guid>https://youngsampk.github.io/research/nonwage_workers_2025.html</guid>
-  <pubDate>Fri, 20 Mar 2026 02:26:21 GMT</pubDate>
+  <pubDate>Fri, 20 Mar 2026 12:32:07 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/research/images/samzumsam.png" medium="image" type="image/png" height="90" width="144"/>
 </item>
 <item>
@@ -62,7 +62,7 @@
   <category>data architecture</category>
   <category>healthcare</category>
   <guid>https://youngsampk.github.io/research/pharmaccess.html</guid>
-  <pubDate>Fri, 20 Mar 2026 02:26:21 GMT</pubDate>
+  <pubDate>Fri, 20 Mar 2026 12:32:07 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/research/images/pharmaccess-momcare-graphic.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -84,7 +84,7 @@
   <category>english</category>
   <category>data-centric ai</category>
   <guid>https://youngsampk.github.io/research/sensire.html</guid>
-  <pubDate>Fri, 20 Mar 2026 02:26:21 GMT</pubDate>
+  <pubDate>Fri, 20 Mar 2026 12:32:07 GMT</pubDate>
   <media:content url="https://youngsampk.github.io/research/images/sensire.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
